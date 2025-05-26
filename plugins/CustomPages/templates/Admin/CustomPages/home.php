@@ -20,20 +20,28 @@ $this->extend('/Admin/Common/edit');
 
                 <fieldset class="input-group">
                     <legend class="input-group__info">
-                        Parte alta
+                        Presentazione
                     </legend>
-                    <?php echo $this->Form->editor('text_1', ['label' => 'Editor', 'class' => 'span-6']); ?> 
-                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Editor inline', 'class' => 'span-6']); ?>
-                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Hero image', 'width' => 1920, 'height' => 1080, 'mobile' => ['width' => 480, 'height' => 890]]); ?>
-                    <?php echo $this->element('admin/uploader/file', ['scope' => 'file-1', 'title' => 'Allegato:  catalogo']); ?>
-                    <?php echo $this->element('admin/uploader/icon', ['scope' => 'icon-1', 'title' => 'Icona della sezione']); ?>
-                    <?php echo $this->element('admin/uploader/gallery', ['scope' => 'gallery', 'title' => 'Griglia immagini']); ?>
-                    <?php echo $this->element('admin/uploader/file-set',['scope' => 'fileset-1', 'title' => 'Allegati fine news']); ?>
-                    <?php echo $this->element('admin/uploader/icon-set', ['scope' => 'iconset', 'title' => 'Set icone servizi']); ?>
-
-                    <?php echo $this->Form->geocode('geocode'); ?>
+                    <?php echo $this->Form->inlineEditor('string_1', ['label' => 'Titolo a sinistra', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo a destra', 'class' => 'span-12']); ?>
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-1', 'title' => 'Immagine presentazione', 'width' => 602, 'height' => 751, 'mobile' => ['width' => 480, 'height' => 751]]); ?>
                 </fieldset>
 
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Chi sono
+                    </legend>
+                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->inlineEditor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>    
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Approccio
+                    </legend>
+                    <?php echo $this->Form->inlineEditor('string_3', ['label' => 'Titolo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->inlineEditor('text_2', ['label' => 'Testo', 'class' => 'span-12']); ?>    
+                </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
 			<?php echo $this->element('admin/tab-social');?>            
@@ -43,8 +51,3 @@ $this->extend('/Admin/Common/edit');
 <?php echo $this->element('admin/save');?>
 
 <?= $this->Form->end() ?>
-
-<?php 
-$coords = !empty($item->geocode) ? $item->geocode : null;
-$this->element('admin/geocode-script', array('coords' => $coords));
-?>

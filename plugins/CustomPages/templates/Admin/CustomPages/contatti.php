@@ -12,8 +12,15 @@ $this->extend('/Admin/Common/edit');
                     <?php
                     echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-10']);
                     echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
-                    echo $this->Form->editor('text_1', ['label' => 'Recapiti']);
                     ?>
+                </fieldset>
+                <fieldset class="input-group">
+                    <legend class="input-group__info">
+                        Parte alta
+                    </legend>
+                    <?php echo $this->Form->control('string_1', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
+                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-2', 'title' => 'Immagine presentazione', 'width' => 468, 'height' => 578]); ?>
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
