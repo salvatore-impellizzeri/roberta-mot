@@ -91,11 +91,25 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Bonny';
+  src: url('../fonts/Bonny-Light.woff2') format('woff2'), url('../fonts/Bonny-Light.woff') format('woff'), url('../fonts/Bonny-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bonny';
+  src: url('../fonts/Bonny-Regular.woff2') format('woff2'), url('../fonts/Bonny-Regular.woff') format('woff'), url('../fonts/Bonny-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 html {
   font-size: clamp(15px,1.14576vw,18px);
 }
 body {
-  color: #000000;
+  color: #4F5637;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
 }
@@ -240,7 +254,7 @@ body::-webkit-scrollbar {
   pointer-events: none;
 }
 .body {
-  background: #fff;
+  background: #FFF FF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -312,7 +326,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 1px solid #000;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #4F5637;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -335,7 +349,7 @@ select {
   font-size: 16px;
   transition: 300ms;
   background: #fff;
-  color: #000000;
+  color: #4F5637;
 }
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -461,7 +475,7 @@ label {
 .radio label input:checked ~ span::before,
 .checkbox label input:checked ~ span::before {
   box-shadow: 0 0 0 3px #fff inset;
-  background: #000000;
+  background: #4F5637;
 }
 .radio label > span,
 .checkbox label > span {
@@ -527,7 +541,7 @@ label {
   line-height: 60px;
   padding: 0 3em;
   background: deeppink;
-  color: #FFF;
+  color: #FFF F;
   font-size: 1rem;
 }
 #article {
@@ -2381,7 +2395,7 @@ button.swiper-pagination-bullet {
   top: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: transparent;
   padding: 0 clamp(10px,2.0832vw,40px);
   display: flex;
   align-items: center;
@@ -2396,10 +2410,10 @@ button.swiper-pagination-bullet {
   background: none;
 }
 .body--light-header:not(.body--scroll) .header {
-  color: #FFF;
+  color: #FFF F;
 }
 .body--scroll .header {
-  background: #fff;
+  background: transparent;
   height: 100px;
 }
 @media screen and (max-width: 1400px) {
@@ -2513,8 +2527,8 @@ button.swiper-pagination-bullet {
   top: 100%;
   left: 50%;
   padding: 10px 30px;
-  border: 1px solid #000000;
-  background: #fff;
+  border: 1px solid #4F5637;
+  background: transparent;
   visibility: hidden;
   pointer-events: none;
   transform: scale3d(1,0,1) translateX(-50%);
@@ -2528,7 +2542,7 @@ button.swiper-pagination-bullet {
 .header .menu__submenu .menu__link {
   height: 40px;
   line-height: 40px;
-  color: #000000;
+  color: #4F5637;
 }
 .hamburger {
   display: block;
@@ -2540,7 +2554,7 @@ button.swiper-pagination-bullet {
 .hamburger span {
   position: absolute;
   height: 1px;
-  background: #000000;
+  background: #4F5637;
   left: 0;
   right: 0;
   top: 50%;
@@ -2549,7 +2563,7 @@ button.swiper-pagination-bullet {
   transition: 500ms cubic-bezier(0.250,0.460,0.450,0.940);
 }
 .body--light-header:not(.body--scroll) .hamburger span {
-  background: #FFF;
+  background: #FFF F;
 }
 .hamburger span:first-child {
   transform: translate(0,-50%) translate3d(0,-9px,0);
@@ -2571,7 +2585,7 @@ button.swiper-pagination-bullet {
 }
 .mobile-menu {
   position: fixed;
-  background: #fff;
+  background: #FFF FF;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2608,7 +2622,7 @@ button.swiper-pagination-bullet {
   top: 50%;
   left: 10px;
   right: 10px;
-  background: #000000;
+  background: #4F5637;
 }
 .mobile-menu__close::before {
   transform: rotate(45deg);
@@ -2654,7 +2668,7 @@ button.swiper-pagination-bullet {
   font-size: clamp(30px,3.1248vw,60px);
   line-height: 1em;
   display: inline-block;
-  color: #000000;
+  color: #4F5637;
 }
 .mobile-menu .menu__link--parent {
   display: inline-flex;
@@ -2792,20 +2806,20 @@ button.swiper-pagination-bullet {
   height: 40px;
   line-height: 38px;
   text-align: center;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #4F5637;
+  border: 1px solid #4F5637;
   border-radius: 3px;
 }
 .paginator__pages .active a {
-  background: #000000;
-  color: #FFF;
+  background: #4F5637;
+  color: #FFF F;
 }
 .languages {
   position: relative;
   text-transform: uppercase;
 }
 .body--light-header:not(.body--scroll) .languages path {
-  fill: #FFF;
+  fill: #FFF F;
 }
 .languages__toggler {
   padding: 0 20px;
@@ -2814,11 +2828,11 @@ button.swiper-pagination-bullet {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #4F5637;
   cursor: pointer;
 }
 .body--light-header:not(.body--scroll) .languages__toggler {
-  border-color: #FFF;
+  border-color: #FFF F;
 }
 @media screen and (max-width: 550px) {
   .languages__toggler {
@@ -2831,12 +2845,12 @@ button.swiper-pagination-bullet {
   will-change: transform;
 }
 .languages__dropdown {
-  background: #fff;
+  background: #FFF FF;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  border: 1px solid #000000;
+  border: 1px solid #4F5637;
   border-top: none;
   visibility: hidden;
   pointer-events: none;
@@ -2853,10 +2867,10 @@ button.swiper-pagination-bullet {
   line-height: 35px;
   text-align: center;
   display: block;
-  color: #000000;
+  color: #4F5637;
 }
 .languages__link--active {
-  color: #808080;
+  color: #cdd3b9;
 }
 .languages.open .languages__dropdown {
   visibility: visible;
@@ -2961,7 +2975,7 @@ button.swiper-pagination-bullet {
     top: auto;
     bottom: 0;
     z-index: 10;
-    color: #FFF;
+    color: #FFF F;
     text-align: right;
     padding: 5px;
   }
@@ -3050,12 +3064,12 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 .contact-info__icon path {
-  fill: #000000;
+  fill: #4F5637;
 }
 .popup {
   position: fixed;
   z-index: 1000;
-  background: #fff;
+  background: #FFF FF;
   top: 50%;
   left: 50%;
   width: 1200px;
@@ -3100,7 +3114,7 @@ button.swiper-pagination-bullet {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+  background: #FFF FF;
   cursor: pointer;
   z-index: 10;
 }
@@ -3115,7 +3129,7 @@ button.swiper-pagination-bullet {
   content: '';
   position: absolute;
   height: 1px;
-  background: #000000;
+  background: #4F5637;
   left: 5px;
   right: 5px;
   top: 50%;
@@ -3186,7 +3200,7 @@ button.swiper-pagination-bullet {
   left: 0;
   right: 0;
   z-index: 2;
-  color: #FFF;
+  color: #FFF F;
   text-align: center;
   display: flex;
   align-items: center;
@@ -3197,11 +3211,11 @@ button.swiper-pagination-bullet {
   max-width: 500px;
 }
 .faq {
-  border: 1px solid #000000;
+  border: 1px solid #4F5637;
   padding: 0 35px 25px;
   padding-bottom: 0;
   cursor: pointer;
-  background-color: #FFF;
+  background-color: #FFF F;
   text-align: left;
 }
 @media screen and (max-width: 700px) {
@@ -3290,7 +3304,7 @@ button.swiper-pagination-bullet {
   }
 }
 .body--light-header:not(.body--scroll) .search path {
-  fill: #FFF;
+  fill: #FFF F;
 }
 .search__toggler {
   display: none;
@@ -3303,7 +3317,7 @@ button.swiper-pagination-bullet {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000000;
+    border: 1px solid #4F5637;
   }
 }
 @media screen and (max-width: 550px) {
@@ -3313,7 +3327,7 @@ button.swiper-pagination-bullet {
   }
 }
 .body--light-header:not(.body--scroll) .search__toggler {
-  border-color: #FFF;
+  border-color: #FFF F;
 }
 @media screen and (max-width: 1200px) {
   .search__wrapper {
@@ -3323,7 +3337,7 @@ button.swiper-pagination-bullet {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #FFF FF;
     padding: 60px clamp(10px,1.0416vw,20px) 0;
     pointer-events: none;
     transition: 600ms cubic-bezier(0.250,0.460,0.450,0.940);
@@ -3349,7 +3363,7 @@ button.swiper-pagination-bullet {
     top: 50%;
     left: 10px;
     right: 10px;
-    background: #000000;
+    background: #4F5637;
   }
   .search__close::before {
     transform: rotate(45deg);
@@ -3382,20 +3396,20 @@ button.swiper-pagination-bullet {
   background: none;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #4F5637;
   font-size: inherit;
   padding: 0 40px;
   color: inherit;
 }
 @media screen and (max-width: 1200px) {
   .search__input[type="text"] {
-    border: 1px solid #000000;
+    border: 1px solid #4F5637;
     height: 50px;
     line-height: 50px;
   }
 }
 .body--light-header:not(.body--scroll) .search__input[type="text"] {
-  border-color: #FFF;
+  border-color: #FFF F;
 }
 .search__icon,
 .search__spinner {
@@ -3437,11 +3451,11 @@ button.swiper-pagination-bullet {
   max-height: 50vh;
   overflow-y: auto;
   padding: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #4F5637;
   visibility: hidden;
   pointer-events: none;
   font-size: 14px;
-  background: #fff;
+  background: #FFF FF;
 }
 @media screen and (max-width: 1200px) {
   .search__results {
@@ -3465,7 +3479,7 @@ button.swiper-pagination-bullet {
   display: grid;
   padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
-  color: #000000;
+  color: #4F5637;
   grid-template-columns: 80px 1fr;
   gap: 15px;
   font-weight: 500;
@@ -3496,7 +3510,7 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 .page-hero--light {
-  color: #FFF;
+  color: #FFF F;
 }
 .page-hero--light .page-hero__bg::after {
   background: rgba(0,0,0,0.2);
@@ -3854,7 +3868,7 @@ button.swiper-pagination-bullet {
   }
 }
 .page-fullscreen--light {
-  color: #FFF;
+  color: #FFF F;
 }
 .page-fullscreen--light .page-fullscreen__bg::after {
   background: rgba(0,0,0,0.2);
@@ -4369,7 +4383,7 @@ button.swiper-pagination-bullet {
 }
 .product-preview {
   display: block;
-  color: #000000;
+  color: #4F5637;
 }
 .product-preview__content {
   margin-top: 20px;
@@ -4380,7 +4394,7 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 .category-menu a {
-  color: #000000;
+  color: #4F5637;
 }
 .category-menu li {
   margin-bottom: .6em;
@@ -4681,9 +4695,9 @@ button.swiper-pagination-bullet {
   opacity: .2;
 }
 .shop-product-preview {
-  border: 1px solid #000000;
+  border: 1px solid #4F5637;
   padding: 20px;
-  color: #000000;
+  color: #4F5637;
 }
 .shop-product-preview__image img {
   aspect-ratio: 1.3333333333333;
@@ -4723,8 +4737,8 @@ button.swiper-pagination-bullet {
   height: 40px;
   text-align: center;
   line-height: 40px;
-  color: #FFF;
-  background: #000000;
+  color: #FFF F;
+  background: #4F5637;
   cursor: pointer;
 }
 .shop-pagination__page[data-current] {

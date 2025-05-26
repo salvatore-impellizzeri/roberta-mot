@@ -26,7 +26,7 @@
 			'default_language' => 'it',
 			'languages' => array(),
 			'menu_depth' => 2,
-			'font' => ''
+			'font' => 'https://use.typekit.net/gbi0ekt.css'
 		],
         'Shop' => [
             'vatIncuded' => true, //se true i prezzi inseriti nel pannello sono comprensivi di IVA
