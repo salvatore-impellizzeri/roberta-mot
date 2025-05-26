@@ -1,6 +1,6 @@
 msgctxt "admin"
 msgid "plugin name"
-msgstr "Eventi"
+msgstr "Workshop"
 
 msgctxt "admin"
 msgid "plugin icon"
@@ -8,7 +8,7 @@ msgstr "event"
 
 msgctxt "admin"
 msgid "sef prefix"
-msgstr "eventi"
+msgstr "workshops"
 
 msgctxt "admin"
 msgid "preview"

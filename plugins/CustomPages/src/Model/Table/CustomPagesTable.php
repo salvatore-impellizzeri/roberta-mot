@@ -14,7 +14,11 @@ class CustomPagesTable extends AppTable
 
     public $layouts = [
         'home',
-        'contatti'
+        'contatti',
+        'family',
+        'meetings',
+        'news',
+        'about'
     ];
 
     /**
