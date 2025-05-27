@@ -1,5 +1,6 @@
 // FONTS
-@main-font: 'Inter', sans-serif;
+@main-font: 'Bonny', sans-serif;
+@secondary-font: 'futura-pt', sans-serif;
 
 // Var per geneerare vw da px (Es 100vw*@px2vw) == 
 @px2vw: 0.05208;
@@ -12,26 +13,37 @@
 
 // COLORI
 @bg-color: #FFFFF;
-@header-bg-color: transparent;
+@bg-secondary: @cream;
+@header-bg-color: @cream;
 @text-color: @green;
 @light-text-color: #FFFF;
 @main-color: deeppink;
-@border-color: #e0e0e0;
-@gallery-bg: #bcd3ec; //sfondo gallery 
+@border-color: @green;
+@gallery-bg: @cream; 
 
 //pulsanti
-@cta-border: #000;
-@cta-color: #000;
-@cta-bg: #f0f0f0;
+@cta-border: @green;
+@cta-border-secondary: @white;
+@cta-color: @green;
+@cta-bg-secondary: @white;
+@cta-bg: #fffff;
+@cta-bg-secondary: @light-green;
+
+//badge
+@badge-bg: @light-green;
+@badge-color: #fff;
+@badge-bg-secondary: #fff;
+@badge-color-secondary: @green;
+@badge-border: @green;
 
 //cta
 @page-cta-bg: #324254;
 @page-cta-color: #fff;
 
 //footer
-@footer-bg: #ebebeb;
-@footer-color: #000;
-
+@footer-bg: #fff;
+@footer-color: @green;
+@footer-border: @light-green;
 
 @input-border-color: #000;
 @input-bg-color: #fff;

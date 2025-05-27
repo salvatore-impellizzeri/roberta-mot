@@ -2,20 +2,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 46px;
-    padding: 0 20px;
-    border: 1px solid @cta-border;
+    padding: clamp(10px, 20vw * @px2vw, 20px) clamp(12px, 25vw * @px2vw, 25px);
     text-transform: uppercase;
-    color: @cta-color;
-    background: @cta-bg;
     gap: 10px;
-    .font-14;
     cursor: pointer;
+    .font-futura;
 
-    @media screen and (max-width: @mobile-l) {
-        height: 40px;
+    &--white{
+        color: @cta-color;
+        background: @cta-bg;
+        border: 1px solid @cta-border;
     }
-
 
     svg{
         path{
@@ -33,4 +30,13 @@
             -webkit-transform: translate3d(5px,0,0);
         }
     }
+}
+
+
+.br-square{
+    border-radius: 5px;
+}
+
+.br-circle{
+    border-radius: 100px;
 }

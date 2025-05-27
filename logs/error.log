@@ -19547,3 +19547,73 @@ Stack Trace:
 - [main]:
 
 Request URL: /admin-assets/js/uppy/uppy.min.js.map
+2025-05-27 12:51:53 warning: Undefined array key "images-1"
+Request URL: /
+Trace:
+/Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 1188
+Cake\View\View->_evaluate() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 1145
+Cake\View\View->_render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/Controller.php, line 705
+Cake\Controller\Controller->render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/Controller.php, line 509
+Cake\Controller\Controller->invokeAction() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/src/Middleware/CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Server.php, line 105
+Cake\Http\Server->run() /Applications/MAMP/htdocs/roberta-mot/webroot/index.php, line 44
+[main]
+
+2025-05-27 12:51:53 warning: Trying to access array offset on value of type null
+Request URL: /
+Trace:
+/Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 1188
+Cake\View\View->_evaluate() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 1145
+Cake\View\View->_render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/View/View.php, line 785
+Cake\View\View->render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/Controller.php, line 705
+Cake\Controller\Controller->render() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/Controller.php, line 509
+Cake\Controller\Controller->invokeAction() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/src/Middleware/CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /Applications/MAMP/htdocs/roberta-mot/vendor/cakephp/cakephp/src/Http/Server.php, line 105
+Cake\Http\Server->run() /Applications/MAMP/htdocs/roberta-mot/webroot/index.php, line 44
+[main]
+

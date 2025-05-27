@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 html{
-    font-size: clamp(15px, 22vw * @px2vw, 18px);;
+    .font-20;
 }
 
 body{
     color: @text-color;
     font-family: @main-font;
     font-size: 1rem;
+    font-weight: 300;
+
+    strong{
+        font-weight: 400;
+    }
 }
 
 a{
@@ -25,10 +28,6 @@ p{
 
 em{
     font-style: italic;
-}
-
-strong{
-    font-weight: bold;
 }
 
 blockquote{
@@ -72,10 +71,47 @@ li{
     margin-bottom: 1em;
 }
 
+// FONT-FAMILY 
+
+.font-futura{
+    font-family: @secondary-font;
+    font-weight: 300;
+
+    strong{
+        font-weight: 500;
+    }
+}
+
+// FONT-WEIGHT
+
+.fw-light{
+    font-weight: 300;
+}
+
+.fw-book{
+    font-weight: 400;
+}
+
+.fw-medium{
+    font-weight: 500;
+}
+
 // FONT
 
+.font-115{
+    font-size: clamp(30px, 115vw * @px2vw, 115px);
+    line-height: 1.15em;
+}
+
+
+.font-70{
+    font-size: clamp(25px, 70vw * @px2vw, 70px);
+    line-height: 0.9em;
+}
+
+
 .font-60{
-    font-size: clamp(30px, 65vw * @px2vw, 60px);;
+    font-size: clamp(30px, 65vw * @px2vw, 60px);
     line-height: normal;
     * {
         line-height: inherit;
@@ -86,6 +122,10 @@ li{
     }
 }
 
+.font-40{
+    font-size: clamp(18px, 40vw * @px2vw, 40px);
+    line-height: 0.9em;
+}
 
 .font-37{
     font-size: clamp(27px, 40vw * @px2vw, 37px);
@@ -97,6 +137,11 @@ li{
     @media screen and (max-width: @mobile-s) {
         font-size: 22px;
     }
+}
+
+.font-36{
+    font-size: clamp(16px, 36vw * @px2vw, 36px);
+    line-height: 1.04em;
 }
 
 .font-35{
@@ -113,6 +158,21 @@ li{
     *{
         line-height: inherit;
     }
+}
+
+.font-20{
+    font-size: clamp(13px, 20vw * @px2vw, 20px);
+    line-height: 1.6em;
+}
+
+.font-20-104{
+    font-size: clamp(13px, 20vw * @px2vw, 20px);
+    line-height: 1.04em;
+}
+
+.font-16{
+    font-size: clamp(12px, 16vw * @px2vw, 16px);
+    line-height: 1.04em;
 }
 
 .font-14{

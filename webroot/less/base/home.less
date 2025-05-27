@@ -1,0 +1,53 @@
+.home{
+    background-color: @bg-secondary;
+    padding-top: clamp(10px, 40vw * @px2vw, 40px);
+    
+    &__top{
+        .container-l;
+        .m-auto;
+        padding-bottom: clamp(50px, 129vw * @px2vw, 129px);
+        
+        &__presentation{
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: clamp(30px, 196vw * @px2vw, 196px);
+
+            h1{
+                position: absolute;
+                .font-115;
+                width: clamp(200px, 650vw * @px2vw, 650px);
+                z-index: 1;
+            }
+        
+            h1:first-of-type{
+                left: 0;
+                top: 0;
+            }
+        
+            h1:nth-of-type(2){
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: right;
+            }
+        
+            [data-image="roberta-home"]{
+                width: clamp(350px, 602vw * @px2vw, 602px);
+                .br;
+                transform: rotate(5.57deg);
+                opacity: 90%;
+            }
+
+            [data-image="aide-home"]{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: clamp(150px, 408vw * @px2vw, 408px);
+            }
+        }
+    }
+
+}

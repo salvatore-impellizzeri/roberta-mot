@@ -1,0 +1,29 @@
+.text-box{
+    background-color: white;
+    .br;
+    .container-l;
+    .m-auto;
+
+    &--text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: clamp(20px, 99vw * @px2vw, 99px) clamp(25px, 106vw * @px2vw, 106px);
+
+        h1{
+            .font-70;
+        }
+
+        p{
+            .font-futura;
+            margin-bottom: 1.22rem;
+        }
+    }
+
+    &--white{
+        background-color: white;
+    }   
+
+    &--cream{
+        background-color: @bg-secondary;
+    }
+}

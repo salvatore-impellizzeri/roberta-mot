@@ -32,7 +32,7 @@ $this->extend('/Admin/Common/edit');
                         Chi sono
                     </legend>
                     <?php echo $this->Form->inlineEditor('string_3', ['label' => 'Titolo', 'class' => 'span-12']); ?>
-                    <?php echo $this->Form->inlineEditor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>    
+                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>    
                 </fieldset>
 
                 <fieldset class="input-group">
@@ -40,7 +40,7 @@ $this->extend('/Admin/Common/edit');
                         Approccio
                     </legend>
                     <?php echo $this->Form->inlineEditor('string_4', ['label' => 'Titolo', 'class' => 'span-12']); ?>
-                    <?php echo $this->Form->inlineEditor('text_2', ['label' => 'Testo', 'class' => 'span-12']); ?>    
+                    <?php echo $this->Form->editor('text_2', ['label' => 'Testo', 'class' => 'span-12']); ?>    
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
