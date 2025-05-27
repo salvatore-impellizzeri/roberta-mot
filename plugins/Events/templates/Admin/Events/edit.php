@@ -27,8 +27,8 @@
                       echo $this->element('admin/uploader/image', [
     					'scope' => 'preview',
     					'title' => __dx('news', 'admin', 'preview'),
-    					'width' => 500,
-    					'height' => 500
+    					'width' => 1067,
+    					'height' => 1119
     				]);
 
                     echo $this->Form->editor('excerpt', ['label' => __d('admin', 'excerpt')]);

@@ -1,4 +1,5 @@
 <div class="home">
+    <!-- TOP -->
     <div class="home__top">
 
         <!-- PRESENTAZIONE -->
@@ -17,5 +18,10 @@
             'button' => 'chi sono',
             'extraClass' => 'text-box--white text-box--text'
         ]); ?>
+    </div>
+
+    <!-- INCONTRI -->
+    <div class="home__meetings">
+        <?= $this->element('meeting-swiper'); ?>
     </div>
 </div>

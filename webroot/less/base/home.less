@@ -1,15 +1,14 @@
 .home{
-    background-color: @bg-secondary;
-    padding-top: clamp(10px, 40vw * @px2vw, 40px);
     
     &__top{
-        .container-l;
-        .m-auto;
+        padding-top: clamp(10px, 40vw * @px2vw, 40px);
+        background-color: @bg-secondary;
         padding-bottom: clamp(50px, 129vw * @px2vw, 129px);
         
         &__presentation{
+           .container-l;
+            .m-auto;
             position: relative;
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,4 +49,9 @@
         }
     }
 
+    &__meetings{
+        margin-top: clamp(30px, 116vw * @px2vw, 116px);
+        .container-l;
+        .m-auto;
+    }
 }

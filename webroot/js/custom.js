@@ -287,3 +287,16 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+
+// SWIPER MEETINGS
+document.addEventListener('DOMContentLoaded', () => {
+	const swiperMethods = new Swiper('.meeting-swiper', {
+		spaceBetween: 35,
+		speed: 6000,
+		loop: true,
+		slidesPerView: 3,
+		allowTouchMove: false,
+		loopAdditionalSlides: 3,
+	});
+});

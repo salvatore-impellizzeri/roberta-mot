@@ -30,7 +30,7 @@
     				]);
 
                     echo $this->Form->editor('text', ['label' => __d('admin', 'text')]);
-                    echo $this->Form->inlineEditor('last-text', ['label' => 'Testo separato']);
+                    echo $this->Form->inlineEditor('last_text', ['label' => 'Testo separato']);
                     ?>
                 </fieldset>
             </div>

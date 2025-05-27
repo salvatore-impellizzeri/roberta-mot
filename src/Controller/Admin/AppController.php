@@ -536,9 +536,8 @@ class AppController extends Controller
             $records->group($this->queryGroup);
         }
 
-        $this->set(compact('records'));
-        $this->viewBuilder()->setOption('serialize', 'records');
-		
+		$this->set(compact('records'));
+        $this->viewBuilder()->setOption('serialize', 'records');		
 	}
 
 
