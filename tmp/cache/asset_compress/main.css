@@ -4859,6 +4859,7 @@ button.swiper-pagination-bullet {
 .card__img {
   width: clamp(150px,25.62336vw,492px);
   height: clamp(120px,20.3112vw,390px);
+  margin-bottom: clamp(10px,1.51032vw,29px);
 }
 .card img {
   border-radius: 30px;
@@ -4905,6 +4906,29 @@ button.swiper-pagination-bullet {
   color: #4F5637;
   font-weight: 400;
   padding: clamp(5px,0.5208vw,10px) clamp(6px,0.62496vw,12px);
+}
+.card__workshop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card__workshop hr {
+  height: 2px;
+  width: 100%;
+  background-color: #98AF6D;
+}
+.badge {
+  border-radius: 30px;
+  padding: clamp(6px,0.88536vw,17px) clamp(12px,1.40616vw,27px);
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge--green {
+  background-color: #98AF6D;
+  color: #fff;
 }
 .home__top {
   padding-top: clamp(10px,2.0832vw,40px);

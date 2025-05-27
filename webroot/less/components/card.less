@@ -6,6 +6,7 @@
     &__img{
         width: clamp(150px, 492vw * @px2vw, 492px);
         height: clamp(120px, 390vw * @px2vw, 390px);
+        margin-bottom: clamp(10px, 29vw * @px2vw, 29px);
     }
 
     img{
@@ -47,6 +48,18 @@
                 .fw-book;
                 padding: clamp(5px, 10vw * @px2vw, 10px) clamp(6px, 12vw * @px2vw, 12px);
             }
+        }
+    }
+
+    &__workshop{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        hr{
+            height: 2px;
+            width: 100%;
+            background-color: @badge-bg;
         }
     }
 

@@ -13,7 +13,8 @@
                 <a href="<?= $this->Frontend->url('/events/view/' . $meeting->id); ?>" class="prodotti__item">
                     <?= $this->element('card', [
                         'extraClass' => 'card--meeting',
-                        'item' => $meeting
+                        'item' => $meeting,
+                        'label' => "workshop"
                     ]); ?>
                 </a>
             </div>
