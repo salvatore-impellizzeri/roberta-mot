@@ -31,7 +31,7 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Chi sono
                     </legend>
-                    <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->inlineEditor('string_3', ['label' => 'Titolo', 'class' => 'span-12']); ?>
                     <?php echo $this->Form->inlineEditor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>    
                 </fieldset>
 
@@ -39,7 +39,7 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Approccio
                     </legend>
-                    <?php echo $this->Form->inlineEditor('string_3', ['label' => 'Titolo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->inlineEditor('string_4', ['label' => 'Titolo', 'class' => 'span-12']); ?>
                     <?php echo $this->Form->inlineEditor('text_2', ['label' => 'Testo', 'class' => 'span-12']); ?>    
                 </fieldset>
             </div>

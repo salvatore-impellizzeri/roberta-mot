@@ -25,16 +25,12 @@
                      echo $this->element('admin/uploader/image', [
     					'scope' => 'preview',
     					'title' => __dx('news', 'admin', 'preview'),
-    					'width' => 440 * 2,
-    					'height' => 320 * 2
+    					'width' => 1305 * 2,
+    					'height' => 526 * 2
     				]);
 
-                    echo $this->Form->editor('excerpt', ['label' => __d('admin', 'excerpt')]);
                     echo $this->Form->editor('text', ['label' => __d('admin', 'text')]);
-
-                    echo $this->element('admin/uploader/gallery', [
-						'scope' => 'gallery'
-					]);
+                    echo $this->Form->inlineEditor('last-text', ['label' => 'Testo separato']);
                     ?>
                 </fieldset>
             </div>

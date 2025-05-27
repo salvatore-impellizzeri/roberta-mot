@@ -24,8 +24,6 @@ $this->extend('/Admin/Common/edit');
                     </legend>
                     <?php echo $this->Form->control('string_1', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->inlineEditor('string_2', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
-                    <?php echo $this->Form->editor('text_1', ['label' => 'Testo', 'class' => 'span-12']); ?>
-                    <?php echo $this->element('admin/uploader/image', ['scope' => 'image-2', 'title' => 'Immagine presentazione', 'width' => 773, 'height' => 510]); ?>
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
