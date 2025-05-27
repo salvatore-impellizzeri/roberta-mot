@@ -10,9 +10,11 @@
                         Generali
                     </legend>
                     <?php
-                    echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-7']);
+                    echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-10']);
+                    echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
                     echo $this->Form->control('date', ['label' => __d('admin', 'date'), 'extraClass' => 'span-4']);
-                    echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-1']);
+                    echo $this->Form->control('hour', ['label' => 'Orario', 'extraClass' => 'span-4']);
+                    echo $this->Form->control('location', ['label' => 'Location', 'extraClass' => 'span-4']);
                     ?>
                 </fieldset>
 
@@ -31,10 +33,6 @@
 
                     echo $this->Form->editor('excerpt', ['label' => __d('admin', 'excerpt')]);
                     echo $this->Form->editor('text', ['label' => __d('admin', 'text')]);
-
-                    echo $this->element('admin/uploader/gallery', [
-						'scope' => 'gallery'
-					]);
                     ?> 
                 </fieldset>
             </div>

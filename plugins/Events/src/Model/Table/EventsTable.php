@@ -51,6 +51,15 @@ class EventsTable extends AppTable
             ->requirePresence('text', 'create')
             ->notEmptyString('text', __d('admin', 'This field cannot be left blank'));
 
+        $validator
+            ->scalar('hour')
+            ->requirePresence('hour', 'create')
+            ->notEmptyString('hour', __d('admin', 'This field cannot be left blank'));
+
+        $validator
+            ->scalar('location')
+            ->requirePresence('location', 'create')
+            ->notEmptyString('location', __d('admin', 'This field cannot be left blank'));
 
         $validator
             ->date('date')

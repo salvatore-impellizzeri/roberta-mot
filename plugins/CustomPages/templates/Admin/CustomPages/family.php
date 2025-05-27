@@ -39,8 +39,11 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Tre box
                     </legend>
+                    <?php echo $this->Form->control('string_4', ['label' => 'Titolo primo box', 'class' => 'span-4']); ?> 
                     <?php echo $this->Form->editor('text_4', ['label' => 'Testo primo box', 'class' => 'span-4']); ?> 
+                    <?php echo $this->Form->control('string_5', ['label' => 'Titolo primo box', 'class' => 'span-4']); ?> 
                     <?php echo $this->Form->editor('text_5', ['label' => 'Testo secondo box', 'class' => 'span-4']); ?> 
+                    <?php echo $this->Form->control('string_6', ['label' => 'Titolo primo box', 'class' => 'span-4']); ?> 
                     <?php echo $this->Form->editor('text_6', ['label' => 'Testo terzo box', 'class' => 'span-4']); ?>
                 </fieldset>
 
@@ -48,10 +51,10 @@ $this->extend('/Admin/Common/edit');
                     <legend class="input-group__info">
                         Approccio
                     </legend>
-                    <?php echo $this->Form->control('string_6', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
-                    <?php echo $this->Form->inlineEditor('string_7', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->control('string_7', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->inlineEditor('string_8', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->editor('text_7', ['label' => 'Testo', 'class' => 'span-12']); ?>
-                    <?php echo $this->Form->inlineEditor('string_8', ['label' => 'Descrizione separata', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->inlineEditor('string_9', ['label' => 'Descrizione separata', 'class' => 'span-12']); ?> 
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>
