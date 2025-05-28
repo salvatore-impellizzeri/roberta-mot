@@ -1,3 +1,20 @@
+<?php
+$accordions = $queryBuilder->get('Sliders.Slides')
+    ->find()
+    ->where([
+        'Slides.published' => true,
+        'Slides.slider_id' => 1
+    ])
+    ->all();
+    $items = [];
+    foreach ($accordions as $accordion) {
+        $items[] = [
+            'title' => $accordion->title,
+            'text' => $accordion->text, 
+        ];
+    }
+?>
+
 <div class="home">
     <!-- TOP -->
     <div class="home__top">
@@ -32,11 +49,27 @@
     </div>
 
     <!-- SECOND TEXT BOX -->
-    <?= $this->element('text-box', [
-        'title' => $item->string_4,
-        'text' => $item->text_2,
-        'url' => '#',
-        'button' => 'chi sono',
-        'extraClass' => 'text-box--white text-box--text'
-    ]); ?>
+    <div class="home__approach">
+        <?= $this->element('text-box', [
+            'title' => $item->string_4,
+            'text' => $item->text_2,
+            'url' => '#',
+            'button' => 'il mio approccio',
+            'extraClass' => 'text-box--white text-box--text'
+        ]); ?>
+    </div>
+
+    <!-- ACCORDION -->
+    <div class="home__accordion">
+        <?= $this->element('faq', [
+            'titleAccordion' => 'Approfondisci le <strong>Costellazioni Familiari</strong>',
+            'items' => $items
+        ]); ?>
+        <?= $this->element('cta', [
+            'label' => 'costellazioni familiari',
+            'url' => '#',
+            'extraClass' => 'cta--square cta--white',
+            'icon' => 'icons/arrow-right.svg'
+        ]); ?>
+    </div>
 </div>

@@ -3300,81 +3300,119 @@ button.swiper-pagination-bullet {
 .popup__fg-wrapper {
   max-width: 500px;
 }
-.faq {
-  border: 1px solid #4F5637;
-  padding: 0 35px 25px;
-  padding-bottom: 0;
+.accordion-container {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion-container__title {
+  font-size: clamp(18px,2.0832vw,40px);
+  line-height: 0.9em;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  margin-left: 0.35em;
+  margin-bottom: 0.74em;
+  text-align: left;
+}
+.accordion-container__title strong {
+  font-weight: 500;
+}
+.accordion-wrapper {
+  padding: clamp(20px,4.6872vw,90px) clamp(70px,14.0616vw,270px);
+  border: 1px solid #98AF6D;
+  border-radius: 30px;
+}
+.accordion {
+  border-bottom: 1px solid #98AF6D;
+  padding-top: 2.25em;
   cursor: pointer;
   background-color: #FFF;
   text-align: left;
 }
-@media screen and (max-width: 700px) {
-  .faq {
-    padding: 0 15px 15px;
-    padding-bottom: 0;
-  }
+.accordion:last-child {
+  border: 0;
 }
-.faq__title {
-  font-size: clamp(18px,1.5624vw,23px);
+.accordion__title {
+  font-size: clamp(18px,2.0832vw,40px);
+  line-height: 0.9em;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  display: flex;
+  gap: clamp(15px,2.70816vw,52px);
+  align-items: center;
+}
+.accordion__title strong {
+  font-weight: 500;
+}
+.accordion__number {
+  color: #98AF6D;
+  font-family: 'Bonny', sans-serif;
+  font-size: clamp(30px,3.3852vw,60px);
   line-height: normal;
 }
-.faq__title * {
+.accordion__number * {
   line-height: inherit;
 }
-@media screen and (max-width: 550px) {
-  .faq__title {
-    font-size: 1rem;
-    font-weight: bold;
+@media screen and (max-width: 350px) {
+  .accordion__number {
+    font-size: 25px;
   }
 }
-.faq__toggler {
+.accordion__toggler {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
   gap: 10px;
 }
 @media screen and (max-width: 700px) {
-  .faq__toggler {
+  .accordion__toggler {
     padding: 15px 0;
   }
 }
-.faq__toggler__indicator {
+.accordion__toggler__indicator {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 52px;
+  height: 52px;
   display: block;
+  border-radius: 1000px;
+  border: 1px solid #4F5637;
 }
-.faq__toggler__indicator::after {
+.accordion__toggler__indicator::before,
+.accordion__toggler__indicator::after {
   content: '';
   position: absolute;
-  width: 2px;
-  height: 100%;
-  background-color: #000;
-  top: 0;
-  left: 50%;
-  transform: translate3d(-50%,0,0);
-  -webkit-transform: translate3d(-50%,0,0);
-  transition: transform .3s cubic-bezier(0.250,0.460,0.450,0.940);
+  background-color: #4F5637;
+  transition: 0.3s cubic-bezier(0.250,0.460,0.450,0.940);
 }
-.faq__toggler__indicator::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #000;
+.accordion__toggler__indicator::before {
+  width: 55%;
+  height: 1px;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-50%,0);
-  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate(-50%,-50%);
 }
-.faq__content {
+.accordion__toggler__indicator::after {
+  width: 1px;
+  height: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scaleY(1);
+  transform-origin: center center;
+}
+.accordion__content {
   overflow: hidden;
   height: 0;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  font-size: clamp(13px,1.0416vw,20px);
+  line-height: 1.6em;
+  margin-top: 2.25em;
 }
-.faq.open .page-faq__toggler__indicator::after {
-  transform: translate3d(-50%,0,0) rotate(-90deg);
-  -webkit-transform: translate3d(-50%,0,0) rotate(-90deg);
+.accordion__content strong {
+  font-weight: 500;
+}
+.accordion.open .accordion__toggler__indicator::after {
+  transform: translate(-50%,-50%) scaleY(0);
 }
 .search {
   width: min(350px,18.228vw);
@@ -5038,4 +5076,16 @@ button.swiper-pagination-bullet {
 }
 .home__meetings > .cta {
   margin-top: clamp(30px,3.6456vw,70px);
+}
+.home__accordion {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.home__accordion > .cta {
+  margin-top: clamp(30px,3.6456vw,70px);
+}
+.home__approach {
+  margin-bottom: clamp(30px,5.208vw,100px);
 }

@@ -1,64 +1,88 @@
-.faq{
-    border: 1px solid @text-color;
-    padding: 0 35px 25px;
-    padding-bottom: 0;
+.accordion-container{
+    .container-l;
+    .m-auto;
+
+    &__title{
+        .font-40;
+        .font-futura;
+        margin-left: 0.35em;
+        margin-bottom: 0.74em;
+        text-align: left;
+    }
+}
+
+.accordion-wrapper{
+    padding: clamp(20px, 90vw * @px2vw, 90px) clamp(70px, 270vw * @px2vw, 270px);
+    border: 1px solid @border-light;
+    .br;
+}
+
+.accordion{
+    border-bottom: 1px solid @border-light;
+    padding-top: 2.25em;
     cursor: pointer;
     background-color: @light-text-color;
     text-align: left;
 
-    @media screen and (max-width: @tablet-s) {
-        padding: 0 15px 15px;
-        padding-bottom: 0;
+    &:last-child{
+        border: 0;
     }
     
     &__title{
-        .font-23;
+        .font-40;
+        .font-futura;
+        display: flex;
+        gap: clamp(15px, 52vw * @px2vw, 52px);
+        align-items: center;
+    }
 
-        @media screen and (max-width: @mobile-l) {
-            font-size: 1rem;
-            font-weight: bold;
-        }
+    &__number{
+        color: @text-secondary;
+        font-family: @main-font;
+        .font-60;
     }
 
     &__toggler{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 0;
         gap: 10px;
 
         @media screen and (max-width: @tablet-s) {
             padding: 15px 0;
         }
 
-        &__indicator{
+        &__indicator {
             position: relative;
-            width: 10px;
-            height: 10px;
+            width: 52px;
+            height: 52px;
             display: block;
-            &::after{
+            border-radius: 1000px;
+            border: 1px solid @border-color;
+
+            &::before,
+            &::after {
                 content: '';
                 position: absolute;
-                width: 2px;
-                height: 100%;
-                background-color: #000;
-                top: 0;
-                left: 50%;
-                transform: translate3d(-50%, 0, 0);
-                -webkit-transform: translate3d(-50%, 0, 0);
-                transition: transform .3s @easeOutQuad;
+                background-color: @text-color;
+                transition: 0.3s @easeOutQuad;
             }
 
-            &::before{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: #000;
+            &::before {
+                width: 55%;
+                height: 1px;
                 top: 50%;
                 left: 50%;
-                transform: translate3d(-50%, -50%, 0);
-                -webkit-transform: translate3d(-50%, -50%, 0);
+                transform: translate(-50%, -50%);
+            }
+
+            &::after {
+                width: 1px;
+                height: 55%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scaleY(1);
+                transform-origin: center center;
             }
         }
     }
@@ -66,13 +90,16 @@
     &__content{
         overflow: hidden;
         height: 0;
+        .font-futura;
+        .font-20;
+        margin-top: 2.25em;
     }
     
     &.open{
-        .page-faq__toggler__indicator{
+
+        .accordion__toggler__indicator{
             &::after{
-                transform: translate3d(-50%, 0, 0) rotate(-90deg);
-                -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
+                transform: translate(-50%, -50%) scaleY(0);
             }
         }
     }
