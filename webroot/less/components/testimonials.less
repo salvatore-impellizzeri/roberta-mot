@@ -1,0 +1,42 @@
+.testimonials{
+    .container-l;
+    .m-auto;
+
+    &__upper{
+        display: flex;
+        justify-content: space-between;
+        
+        &__text{
+            .font-40;
+            .font-futura;
+            margin-left: 0.35em;
+            margin-bottom: 0.74em;
+            text-align: left;
+        }
+    }
+
+
+    &__testimonial{
+        background-color: @box-bg;
+        color: @box-text;
+        .br;
+        padding: clamp(20px, 89vw * @px2vw, 89px) 0;
+        .font-futura;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 2.2em;
+        text-align: center;
+        .fw-book;
+
+        p{
+            width: clamp(200px, 576vw * @px2vw, 576px);
+        }
+    }
+
+    &__name{
+        .font-24;
+        .fw-medium;
+    }
+}

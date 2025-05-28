@@ -1,14 +1,14 @@
 <?php
-$accordions = $queryBuilder->get('Sliders.Slides')
+$family = $queryBuilder->get('Sliders.Slides')
     ->find()
     ->where([
         'Slides.published' => true,
         'Slides.slider_id' => 1
     ])
     ->all();
-    $items = [];
-    foreach ($accordions as $accordion) {
-        $items[] = [
+    $itemsFamily = [];
+    foreach ($family as $accordion) {
+        $itemsFamily[] = [
             'title' => $accordion->title,
             'text' => $accordion->text, 
         ];
@@ -63,7 +63,7 @@ $accordions = $queryBuilder->get('Sliders.Slides')
     <div class="home__accordion">
         <?= $this->element('faq', [
             'titleAccordion' => 'Approfondisci le <strong>Costellazioni Familiari</strong>',
-            'items' => $items
+            'items' => $itemsFamily
         ]); ?>
         <?= $this->element('cta', [
             'label' => 'costellazioni familiari',
@@ -71,5 +71,10 @@ $accordions = $queryBuilder->get('Sliders.Slides')
             'extraClass' => 'cta--square cta--white',
             'icon' => 'icons/arrow-right.svg'
         ]); ?>
+    </div>
+
+    <!-- TESTIMONIANZE -->
+    <div class="home__testimonials">
+        <?= $this->element('testimonials'); ?>
     </div>
 </div>

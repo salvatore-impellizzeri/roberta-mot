@@ -227,6 +227,10 @@ li {
 .font-35 * {
   line-height: inherit;
 }
+.font-24 {
+  font-size: clamp(14px,1.24992vw,24px);
+  line-height: 1.04em;
+}
 .font-23 {
   font-size: clamp(18px,1.5624vw,23px);
   line-height: normal;
@@ -4876,6 +4880,9 @@ button.swiper-pagination-bullet {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-200 {
+  margin-bottom: clamp(50px,10.416vw,200px);
+}
 .container-l {
   width: clamp(350px,87.65064vw,1683px);
 }
@@ -5022,6 +5029,53 @@ button.swiper-pagination-bullet {
   background-color: #98AF6D;
   color: #fff;
 }
+.testimonials {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials__upper {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials__upper__text {
+  font-size: clamp(18px,2.0832vw,40px);
+  line-height: 0.9em;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  margin-left: 0.35em;
+  margin-bottom: 0.74em;
+  text-align: left;
+}
+.testimonials__upper__text strong {
+  font-weight: 500;
+}
+.testimonials__testimonial {
+  background-color: #EFEFEF;
+  color: #4F5637;
+  border-radius: 30px;
+  padding: clamp(20px,4.63512vw,89px) 0;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 2.2em;
+  text-align: center;
+  font-weight: 400;
+}
+.testimonials__testimonial strong {
+  font-weight: 500;
+}
+.testimonials__testimonial p {
+  width: clamp(200px,29.99808vw,576px);
+}
+.testimonials__name {
+  font-size: clamp(14px,1.24992vw,24px);
+  line-height: 1.04em;
+  font-weight: 500;
+}
 .home__top {
   padding-top: clamp(10px,2.0832vw,40px);
   background-color: #F5E9D9;
@@ -5077,15 +5131,16 @@ button.swiper-pagination-bullet {
 .home__meetings > .cta {
   margin-top: clamp(30px,3.6456vw,70px);
 }
+.home__approach {
+  margin-bottom: clamp(30px,5.208vw,100px);
+}
 .home__accordion {
   width: clamp(350px,87.65064vw,1683px);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-bottom: clamp(50px,10.416vw,200px);
 }
 .home__accordion > .cta {
   margin-top: clamp(30px,3.6456vw,70px);
-}
-.home__approach {
-  margin-bottom: clamp(30px,5.208vw,100px);
 }

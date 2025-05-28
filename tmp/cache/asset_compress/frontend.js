@@ -9985,10 +9985,21 @@ requestAnimationFrame(raf);
 
 
 // SWIPER MEETINGS
-const swiperMethods = new Swiper('.meeting-swiper', {
+const swiperMeetings = new Swiper('.meeting-swiper', {
 	spaceBetween: 35,
 	speed: 500,
 	slidesPerView: 3,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+// SWIPER TESTIMONIALS
+const swiperTestimonials = new Swiper('.testimonials', {
+	spaceBetween: 35,
+	speed: 500,
+	slidesPerView: 2.2,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

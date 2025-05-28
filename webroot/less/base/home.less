@@ -61,17 +61,19 @@
         }
     }
 
+    &__approach{
+        margin-bottom: clamp(30px, 100vw * @px2vw, 100px);
+    }
+
     &__accordion{
         .container-l;
         .m-auto;
         text-align: center;
+        .mb-200;
 
         & > .cta{
             margin-top: clamp(30px, 70vw * @px2vw, 70px);
         }
     }
 
-    &__approach{
-        margin-bottom: clamp(30px, 100vw * @px2vw, 100px);
-    }
 }
