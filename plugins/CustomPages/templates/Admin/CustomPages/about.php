@@ -55,7 +55,7 @@ $this->extend('/Admin/Common/edit');
                     </legend>
                     <?php echo $this->Form->control('string_7', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->inlineEditor('string_8', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
-                    <?php echo $this->Form->editor('text_4', ['label' => 'Testo', 'class' => 'span-12']); ?>
+                    <?php echo $this->Form->editor('text_9', ['label' => 'Testo', 'class' => 'span-12']); ?>
                 </fieldset>
 
                 <fieldset class="input-group">

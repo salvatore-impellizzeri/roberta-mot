@@ -75,7 +75,7 @@ li{
 
 .font-futura{
     font-family: @secondary-font;
-    font-weight: 300;
+    font-weight: 400;
 
     strong{
         font-weight: 500;
@@ -150,6 +150,11 @@ li{
     * {
         line-height: inherit;
     }
+}
+
+.font-32{
+    font-size: clamp(15px, 32vw * @px2vw, 32px);
+    line-height: 1.25em;
 }
 
 .font-24{

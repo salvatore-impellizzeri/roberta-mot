@@ -166,7 +166,7 @@ li {
 }
 .font-futura {
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .font-futura strong {
   font-weight: 500;
@@ -226,6 +226,10 @@ li {
 }
 .font-35 * {
   line-height: inherit;
+}
+.font-32 {
+  font-size: clamp(15px,1.66656vw,32px);
+  line-height: 1.25em;
 }
 .font-24 {
   font-size: clamp(14px,1.24992vw,24px);
@@ -2922,7 +2926,7 @@ button.swiper-pagination-bullet {
   gap: 10px;
   cursor: pointer;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(13px,1.0416vw,20px);
   line-height: 1.04em;
 }
@@ -3291,7 +3295,7 @@ button.swiper-pagination-bullet {
   font-size: clamp(18px,2.0832vw,40px);
   line-height: 0.9em;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 0.35em;
   margin-bottom: 0.74em;
   text-align: left;
@@ -3318,7 +3322,7 @@ button.swiper-pagination-bullet {
   font-size: clamp(18px,2.0832vw,40px);
   line-height: 0.9em;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   gap: clamp(15px,2.70816vw,52px);
   align-items: center;
@@ -3385,7 +3389,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   height: 0;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(13px,1.0416vw,20px);
   line-height: 1.6em;
   margin-top: 2.25em;
@@ -4880,12 +4884,12 @@ button.swiper-pagination-bullet {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: clamp(50px,10.416vw,200px);
-  padding: clamp(20px,5.15592vw,99px) clamp(25px,5.52048vw,106px);
   font-weight: 400;
+  padding: clamp(20px,5.15592vw,99px) clamp(25px,5.52048vw,106px);
 }
 .text-box__mini {
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0.8em;
 }
 .text-box__mini strong {
@@ -4904,11 +4908,18 @@ button.swiper-pagination-bullet {
 }
 .text-box--text p {
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
-  margin-bottom: 1.22rem;
+  font-weight: 400;
 }
 .text-box--text p strong {
   font-weight: 500;
+}
+.text-box--text .cta {
+  margin-top: 1.22rem;
+}
+.text-box--text .text-box__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 .text-box--white {
   background-color: white;
@@ -4931,7 +4942,7 @@ button.swiper-pagination-bullet {
   font-size: clamp(18px,2.0832vw,40px);
   line-height: 0.9em;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: clamp(10px,1.45824vw,28px);
 }
 .meeting-swiper__text strong {
@@ -4959,14 +4970,14 @@ button.swiper-pagination-bullet {
   font-size: clamp(16px,1.87488vw,36px);
   line-height: 1.04em;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .card p strong {
   font-weight: 500;
 }
 .card--meeting {
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(12px,0.83328vw,16px);
   line-height: 1.04em;
   padding-bottom: clamp(14px,1.92696vw,37px);
@@ -5051,7 +5062,7 @@ button.swiper-pagination-bullet {
   font-size: clamp(18px,2.0832vw,40px);
   line-height: 0.9em;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 0.35em;
   margin-bottom: 0.74em;
   text-align: left;
@@ -5065,14 +5076,13 @@ button.swiper-pagination-bullet {
   border-radius: 30px;
   padding: clamp(20px,4.63512vw,89px) 0;
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
   gap: 2.2em;
   text-align: center;
-  font-weight: 400;
 }
 .testimonials__testimonial strong {
   font-weight: 500;
@@ -5086,6 +5096,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
 }
 .img-text {
+  margin-bottom: clamp(50px,10.416vw,200px);
   width: clamp(350px,87.65064vw,1683px);
   margin-left: auto;
   margin-right: auto;
@@ -5093,8 +5104,22 @@ button.swiper-pagination-bullet {
   grid-template-columns: clamp(350px,31.248vw,600px) 2fr;
   gap: clamp(50px,8.12448vw,156px);
 }
-.img-text img {
+.img-text__img {
   border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.img-text__img__content {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img-text__aide {
+  position: absolute;
+  width: clamp(200px,21.24864vw,408px);
+  bottom: clamp(17px,3.1248vw,60px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .img-text__text__mini-title {
   margin-bottom: 0.8em;
@@ -5106,10 +5131,16 @@ button.swiper-pagination-bullet {
 }
 .img-text__text p {
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .img-text__text p strong {
   font-weight: 500;
+}
+.invert {
+  grid-template-columns: 2fr clamp(350px,31.248vw,600px);
+}
+.invert .img-text__img {
+  order: 1;
 }
 .explain-block {
   width: clamp(350px,67.9644vw,1305px);
@@ -5122,16 +5153,45 @@ button.swiper-pagination-bullet {
   height: clamp(150px,11.66592vw,224px);
   column-gap: clamp(15px,1.92696vw,37px);
   font-family: 'futura-pt', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 6em;
   padding: 0 1em;
-  font-weight: 400;
 }
 .explain-block p strong {
   font-weight: 500;
 }
 .explain-block img {
   border-radius: 30px;
+}
+.simple-cards {
+  width: clamp(350px,67.9644vw,1305px);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  align-items: center;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+}
+.simple-cards strong {
+  font-weight: 500;
+}
+.simple-cards__card {
+  height: clamp(200px,24.2172vw,465px);
+  background-color: #EFEFEF;
+  padding: clamp(22px,3.54144vw,68px) clamp(13px,2.13528vw,41px);
+  border-radius: 30px;
+  text-align: center;
+}
+.simple-cards__card p {
+  font-size: clamp(15px,1.66656vw,32px);
+  line-height: 1.25em;
+}
+.simple-cards__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2.5em;
 }
 .home__top {
   padding-top: clamp(10px,2.0832vw,40px);
@@ -5196,7 +5256,6 @@ button.swiper-pagination-bullet {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: clamp(50px,10.416vw,200px);
 }
 .home__accordion > .cta {
   margin-top: clamp(30px,3.6456vw,70px);

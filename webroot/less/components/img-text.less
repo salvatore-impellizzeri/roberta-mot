@@ -1,12 +1,29 @@
 .img-text{
+    .mb-200;
     .container-l;
     .m-auto;
     display: grid;
     grid-template-columns: clamp(350px, 600vw * @px2vw, 600px) 2fr;
     gap: clamp(50px, 156vw * @px2vw, 156px);
 
-    img{
+    &__img{
         .br;
+        overflow: hidden;
+        position: relative;
+
+        &__content{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__aide{
+        position: absolute;
+        width: clamp(200px, 408vw * @px2vw, 408px);
+        bottom: clamp(17px, 60vw * @px2vw, 60px);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__text{
@@ -23,5 +40,12 @@
             .font-futura;
         }
     }
+}
 
+.invert{
+    grid-template-columns: 2fr clamp(350px, 600vw * @px2vw, 600px);
+
+    .img-text__img{
+        order: 1;
+    }
 }

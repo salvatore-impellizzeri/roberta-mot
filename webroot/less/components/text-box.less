@@ -4,8 +4,8 @@
     .container-l;
     .m-auto;
     .mb-200;
-    padding: clamp(20px, 99vw * @px2vw, 99px) clamp(25px, 106vw * @px2vw, 106px);
     .fw-book;
+    padding: clamp(20px, 99vw * @px2vw, 99px) clamp(25px, 106vw * @px2vw, 106px);
 
     &__mini{
         .font-futura;
@@ -26,7 +26,16 @@
 
         p{
             .font-futura;
-            margin-bottom: 1.22rem;
+        }
+
+        .cta{
+            margin-top: 1.22rem;
+        }
+
+        .text-box__text{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
         }
     }
 
