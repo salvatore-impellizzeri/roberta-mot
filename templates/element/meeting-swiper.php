@@ -14,52 +14,66 @@
     <div class="swiper-wrapper">
         <?php foreach ($meetings as $meeting) { ?>
             <div class="swiper-slide">
-                <a href="<?= $this->Frontend->url('/events/view/' . $meeting->id); ?>" class="prodotti__item">
+                <div class="prodotti__item">
                     <?= $this->element('card', [
                         'extraClass' => 'card--meeting',
                         'item' => $meeting,
                         'label' => "workshop",
                         'button' => 'info',
-                        'url' => '#',
+                        'url' => $this->Frontend->url('/events/view/' . $meeting->id),
                         'icon' => 'icons/arrow-right.svg'
                     ]); ?>
-                </a>
+                </div>
             </div>
-             <div class="swiper-slide">
-                <a href="<?= $this->Frontend->url('/events/view/' . $meeting->id); ?>" class="prodotti__item">
+
+            <!-- ELIMINARE I LE SLIDE UNA VOLTA FINITO IL SITO -->
+            <div class="swiper-slide">
+                <div class="prodotti__item">
                     <?= $this->element('card', [
                         'extraClass' => 'card--meeting',
                         'item' => $meeting,
                         'label' => "workshop",
                         'button' => 'info',
-                        'url' => '#',
+                        'url' => $this->Frontend->url('/events/view/' . $meeting->id),
                         'icon' => 'icons/arrow-right.svg'
                     ]); ?>
-                </a>
+                </div>
             </div>
-             <div class="swiper-slide">
-                <a href="<?= $this->Frontend->url('/events/view/' . $meeting->id); ?>" class="prodotti__item">
+            <div class="swiper-slide">
+                <div class="prodotti__item">
                     <?= $this->element('card', [
                         'extraClass' => 'card--meeting',
                         'item' => $meeting,
                         'label' => "workshop",
                         'button' => 'info',
-                        'url' => '#',
+                        'url' => $this->Frontend->url('/events/view/' . $meeting->id),
                         'icon' => 'icons/arrow-right.svg'
                     ]); ?>
-                </a>
+                </div>
             </div>
-             <div class="swiper-slide">
-                <a href="<?= $this->Frontend->url('/events/view/' . $meeting->id); ?>" class="prodotti__item">
+            <div class="swiper-slide">
+                <div class="prodotti__item">
                     <?= $this->element('card', [
                         'extraClass' => 'card--meeting',
                         'item' => $meeting,
                         'label' => "workshop",
                         'button' => 'info',
-                        'url' => '#',
+                        'url' => $this->Frontend->url('/events/view/' . $meeting->id),
                         'icon' => 'icons/arrow-right.svg'
                     ]); ?>
-                </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="prodotti__item">
+                    <?= $this->element('card', [
+                        'extraClass' => 'card--meeting',
+                        'item' => $meeting,
+                        'label' => "workshop",
+                        'button' => 'info',
+                        'url' => $this->Frontend->url('/events/view/' . $meeting->id),
+                        'icon' => 'icons/arrow-right.svg'
+                    ]); ?>
+                </div>
             </div>
         <?php } ?>
     </div>

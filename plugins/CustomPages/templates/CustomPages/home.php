@@ -23,5 +23,20 @@
     <!-- INCONTRI -->
     <div class="home__meetings">
         <?= $this->element('meeting-swiper'); ?>
+        <?= $this->element('cta', [
+            'label' => 'tutti gli incontri',
+            'url' => '#',
+            'icon' => 'icons/arrow-right.svg',
+            'extraClass' => 'cta--white cta--square'
+        ]); ?>
     </div>
+
+    <!-- SECOND TEXT BOX -->
+    <?= $this->element('text-box', [
+        'title' => $item->string_4,
+        'text' => $item->text_2,
+        'url' => '#',
+        'button' => 'chi sono',
+        'extraClass' => 'text-box--white text-box--text'
+    ]); ?>
 </div>

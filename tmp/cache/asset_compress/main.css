@@ -92,15 +92,15 @@ textarea {
 }
 @font-face {
   font-family: 'Bonny';
-  src: url('../fonts/Bonny-Light.woff2') format('woff2'), url('../fonts/Bonny-Light.woff') format('woff'), url('../fonts/Bonny-Light.ttf') format('truetype');
-  font-weight: 300;
+  src: url('../fonts/Bonny-Regular.woff2') format('woff2'), url('../fonts/Bonny-Regular.woff') format('woff'), url('../fonts/Bonny-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bonny';
-  src: url('../fonts/Bonny-Regular.woff2') format('woff2'), url('../fonts/Bonny-Regular.woff') format('woff'), url('../fonts/Bonny-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('../fonts/Bonny-Medium.woff2') format('woff2'), url('../fonts/Bonny-Medium.woff') format('woff'), url('../fonts/Bonny-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
@@ -112,10 +112,10 @@ body {
   color: #4F5637;
   font-family: 'Bonny', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 body strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 a {
   color: deeppink;
@@ -2941,6 +2941,8 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   font-family: 'futura-pt', sans-serif;
   font-weight: 300;
+  font-size: clamp(13px,1.0416vw,20px);
+  line-height: 1.04em;
 }
 .cta strong {
   font-weight: 500;
@@ -4860,6 +4862,7 @@ button.swiper-pagination-bullet {
 .text-box--text h1 {
   font-size: clamp(25px,3.6456vw,70px);
   line-height: 0.9em;
+  width: clamp(350px,32.49792vw,624px);
 }
 .text-box--text p {
   font-family: 'futura-pt', sans-serif;
@@ -5030,4 +5033,9 @@ button.swiper-pagination-bullet {
   width: clamp(350px,87.65064vw,1683px);
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  margin-bottom: clamp(50px,5.208vw,100px);
+}
+.home__meetings > .cta {
+  margin-top: clamp(30px,3.6456vw,70px);
 }
