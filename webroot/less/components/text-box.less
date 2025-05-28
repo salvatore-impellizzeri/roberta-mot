@@ -3,14 +3,23 @@
     .br;
     .container-l;
     .m-auto;
+    padding: clamp(20px, 99vw * @px2vw, 99px) clamp(25px, 106vw * @px2vw, 106px);
+    .fw-book;
+
+    &__mini{
+        .font-futura;
+        margin-bottom: 0.8em;
+    }
+
+    h1{
+        .font-70;
+    }
 
     &--text{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: clamp(20px, 99vw * @px2vw, 99px) clamp(25px, 106vw * @px2vw, 106px);
 
         h1{
-            .font-70;
             width: clamp(350px, 624vw * @px2vw, 624px);
         }
 
@@ -26,5 +35,16 @@
 
     &--cream{
         background-color: @bg-secondary;
+    }
+
+    &--full{
+        text-align: center;
+
+        p{
+            width: clamp(300px, 1262vw * @px2vw, 1262px);
+            .m-auto;
+            .font-70;
+            margin-bottom: 0;
+        }
     }
 }

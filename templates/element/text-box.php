@@ -1,7 +1,14 @@
-<div class="text-box <?= $extraClass ?? '' ?>">
-    <h1><?= $title ?></h1>
+<div class="text-box <?= $extraClass ?? null ?>">
+    <?php if(isset($miniTitle)): ?>
+        <div class="text-box__mini"><?= $miniTitle ?></div>
+    <?php endif ?>
+    <?php if(strpos($extraClass, 'text-box--full')): ?>
+        <?= $title ?? null ?>
     <div>
-        <?= $text ?>
+    <?php else: ?>
+        <h1><?= $title ?? null ?></h1>
+    <?php endif ?>
+        <?= $text ?? null ?>
         <?php if(isset($button) && !empty($button)){ ?>
             <?= $this->element('cta', [
                 'label' => $button,

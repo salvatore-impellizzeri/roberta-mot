@@ -33,7 +33,7 @@ $this->extend('/Admin/Common/edit');
                         Carriera
                     </legend>
                     <?php echo $this->Form->control('string_3', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
-                    <?php echo $this->Form->inlineEditor('string_4', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->editor('text_8', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->editor('text_2', ['label' => 'Testo', 'class' => 'span-12']); ?>
                     <?php echo $this->element('admin/uploader/image', ['scope' => 'image-3', 'title' => 'Immagine Carriera', 'width' => 1305, 'height' => 526, 'mobile' => ['width' => 480, 'height' => 751]]); ?>
                 </fieldset>

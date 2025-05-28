@@ -1,19 +1,23 @@
 .hamburger{
     display: block;
-    width: 40px;
-    height: 20px;
+    width: 61px;
+    height: 61px;
     position: relative;
     cursor: pointer;
+    background-color: @text-secondary;
+    border-radius: 5px;
+
     span{
         position: absolute;
-        height: 1px;
-        background: @text-color;
+        height: 2px;
+        width: 50%;
+        background: @cta-bg;
         position: absolute;
-        left: 0;
+        left: 50%;
         right: 0;
         top: 50%;
-        transform: translate(0,-50%);
-        -webkit-transform: translate(0,-50%);
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
         transition: 500ms @easeOutQuad;
 
         .body--light-header:not(.body--scroll) &{
@@ -21,20 +25,20 @@
         }
         
         &:first-child{
-            transform: translate(0,-50%) translate3d(0,-9px, 0);
-            -webkit-transform: translate(0,-50%) translate3d(0,-9px, 0);
+            transform: translate(-50%,-50%) translate3d(0,-9px, 0);
+            -webkit-transform: translate(-50%,-50%) translate3d(0,-9px, 0);
         }
 
         &:last-child{
-            transform: translate(0,-50%) translate3d(0,9px, 0);
-            -webkit-transform: translate(0,-50%) translate3d(0,9px, 0);
+            transform: translate(-50%,-50%) translate3d(0,9px, 0);
+            -webkit-transform: translate(-50%,-50%) translate3d(0,9px, 0);
         }
 
         @media screen and(max-width: @tablet-m){
             width: 45px;
         }
         @media screen and(max-width: @mobile-l){
-            width: 40px;
+            width: 61px;
         }
     }
 

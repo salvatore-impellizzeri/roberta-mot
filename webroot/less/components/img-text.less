@@ -1,0 +1,27 @@
+.img-text{
+    .container-l;
+    .m-auto;
+    display: grid;
+    grid-template-columns: clamp(350px, 600vw * @px2vw, 600px) 2fr;
+    gap: clamp(50px, 156vw * @px2vw, 156px);
+
+    img{
+        .br;
+    }
+
+    &__text{
+        &__mini-title{
+            margin-bottom: 0.8em;
+        }
+
+        h1{
+            .font-70;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            .font-futura;
+        }
+    }
+
+}

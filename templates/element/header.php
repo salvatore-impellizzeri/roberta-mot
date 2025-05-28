@@ -6,14 +6,19 @@ $homeLink = ACTIVE_LANGUAGE == DEFAULT_LANGUAGE ? '/' : '/'.ACTIVE_LANGUAGE.'/';
 $languages = Configure::read('Setup.languages');
 ?>
 
-<header class="header">
+<header class="header <?= $extraClass ?? null ?>">
     <a href="<?= $homeLink ?>" class="header__logo">
         <?= $this->Frontend->svg('logo.svg') ?>
     </a>
 
-    <?php if (!empty($showSearch)): ?>
-        <div class="header__search">
-            <?php echo $this->element('search'); ?>
+    <?php if (!empty($cta)): ?>
+        <div class="header__cta">
+            <?= $this->element('cta', [
+                'label' => $cta['label'],
+                'icon' => $cta['icon'],
+                'url' => $cta['url'],
+                'extraClass' => 'cta--square cta--white'
+            ]); ?>
         </div>
     <?php endif; ?>
     
@@ -24,24 +29,6 @@ $languages = Configure::read('Setup.languages');
     <?php else: ?>
         <div class="header__hamburger">
             <?php echo $this->element('hamburger'); ?>
-        </div>
-        
-    <?php endif; ?>
-
-
-    <?php if (!empty($languages)): ?>
-        <div class="header__languages">
-            <?= $this->element('languages'); ?>
-        </div>
-    <?php endif; ?>
-
-    <?php if (!empty($cta)): ?>
-        <div class="header__cta">
-            <?= $this->element('cta', [
-                'label' => $cta['label'],
-                'icon' => $cta['icon'],
-                'url' => $cta['url']
-            ]); ?>
         </div>
     <?php endif; ?>
     

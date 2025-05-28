@@ -9999,7 +9999,7 @@ const swiperMeetings = new Swiper('.meeting-swiper', {
 const swiperTestimonials = new Swiper('.testimonials', {
 	spaceBetween: 35,
 	speed: 500,
-	slidesPerView: 2.2,
+	slidesPerView: 2.03,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

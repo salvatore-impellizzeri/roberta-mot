@@ -1,15 +1,15 @@
 .header{
-    height: 120px;
+    height: 126px;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     background: @header-bg-color;
-    padding: 0 clamp(10px, 40vw * @px2vw, 40px);
+    padding: 0 clamp(10px, 117vw * @px2vw, 117px);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px;
+    gap: clamp(12px, 20vw * @px2vw, 20px);
     font-size: 14px;
     z-index: 500;
     transition: 300ms @easeOutQuad;
@@ -19,33 +19,33 @@
         background: none;
     }
 
-    .body--light-header:not(.body--scroll) &{
-        color: @light-text-color;
-    }
+    // .body--light-header:not(.body--scroll) &{
+    //     color: @light-text-color;
+    // }
 
-    .body--scroll &{
-        background: @header-bg-color;
-        height: 100px;
-    }
+    // .body--scroll &{
+    //     background: @header-bg-color;
+    //     height: 100px;
+    // }
 
-    @media screen and (max-width: @l) {
-        height: 100px;
-        .body--scroll &{
-            height: 80px;
-        }
-    }
+    // @media screen and (max-width: @l) {
+    //     height: 100px;
+    //     .body--scroll &{
+    //         height: 80px;
+    //     }
+    // }
 
-    @media screen and (max-width: @tablet-s) {
-        height: 80px;
-    }
+    // @media screen and (max-width: @tablet-s) {
+    //     height: 80px;
+    // }
 
-    @media screen and (max-width: @mobile-l) {
-        gap: 8px;
-    }
+    // @media screen and (max-width: @mobile-l) {
+    //     gap: 8px;
+    // }
 
 
     &__logo{
-        flex: 0 0 220px;
+        flex: 0 0 362px;
         margin-right: auto;
 
         @media screen and (max-width: @l) {
@@ -69,10 +69,6 @@
         }
     }
 
-    &__hamburger{
-        margin-right: 20px;
-    }
-
     &__hamburger-mobile{
         display: none;
         @media screen and (max-width: @tablet-l) {
@@ -81,6 +77,9 @@
     }
 
     &__cta{
+        .cta{
+            .fw-book;
+        }
         @media screen and (max-width: @tablet-s) {
             display: none;
         }

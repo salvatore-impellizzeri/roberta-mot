@@ -35,7 +35,7 @@ msgid "user"
 msgstr "Utente"
 
 msgid "get in touch"
-msgstr "Contattaci"
+msgstr "Contattami"
 
 msgid "menu back"
 msgstr "Indietro"
