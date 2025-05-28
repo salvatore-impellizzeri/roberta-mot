@@ -17,4 +17,9 @@
         'title' => $item->text_8,
         'extraClass' => 'text-box--cream text-box--full'
     ]); ?>
+
+    <?= $this->element('explain-block', [
+        'text' => $item->text_2,
+        'img' => $images['image-3']
+    ]); ?>
 </div>

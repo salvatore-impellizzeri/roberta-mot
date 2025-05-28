@@ -4879,6 +4879,7 @@ button.swiper-pagination-bullet {
   width: clamp(350px,87.65064vw,1683px);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: clamp(50px,10.416vw,200px);
   padding: clamp(20px,5.15592vw,99px) clamp(25px,5.52048vw,106px);
   font-weight: 400;
 }
@@ -5109,6 +5110,28 @@ button.swiper-pagination-bullet {
 }
 .img-text__text p strong {
   font-weight: 500;
+}
+.explain-block {
+  width: clamp(350px,67.9644vw,1305px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: clamp(50px,10.416vw,200px);
+}
+.explain-block p {
+  columns: 2;
+  height: clamp(150px,11.66592vw,224px);
+  column-gap: clamp(15px,1.92696vw,37px);
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  margin-bottom: 6em;
+  padding: 0 1em;
+  font-weight: 400;
+}
+.explain-block p strong {
+  font-weight: 500;
+}
+.explain-block img {
+  border-radius: 30px;
 }
 .home__top {
   padding-top: clamp(10px,2.0832vw,40px);
