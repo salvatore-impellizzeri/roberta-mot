@@ -89,3 +89,36 @@
         }
     }
 }
+
+.buttons-container{
+    position: relative;
+    width: clamp(100px, 124vw * @px2vw, 124px);
+    margin-left: auto;
+    height: clamp(47px, 56vw * @px2vw, 56px);
+    margin-bottom: 1.3em;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    border-radius: 100px;
+    border: 1px solid @border-color;
+    width: clamp(47px, 52vw * @px2vw, 52px);
+    height: clamp(47px, 52vw * @px2vw, 52px);
+
+    svg{
+        width: auto;
+        height: auto;
+    }
+
+    &::after{
+        display: none;
+    }
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}

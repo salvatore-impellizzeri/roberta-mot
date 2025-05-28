@@ -7,7 +7,7 @@
                 'label' => $button,
                 'url' => $url,
                 'icon' => 'icons/arrow-right.svg',
-                'extraClass' => 'br-square cta--white',
+                'extraClass' => 'cta--square cta--white',
             ]); ?>
         <?php } ?>
     </div>

@@ -2,9 +2,9 @@
     .br;
     background-color: @bg-secondary;
     padding: clamp(11px, 22vw * @px2vw, 22px) clamp(10px, 20vw * @px2vw, 20px);
+    width: clamp(180px, 533vw * @px2vw, 533px);
 
     &__img{
-        width: clamp(150px, 492vw * @px2vw, 492px);
         height: clamp(120px, 390vw * @px2vw, 390px);
         margin-bottom: clamp(10px, 29vw * @px2vw, 29px);
     }
@@ -26,6 +26,7 @@
     &--meeting{
         .font-futura;
         .font-16;
+        padding-bottom: clamp(14px, 37vw * @px2vw, 37px);
 
         .card__img{
             position: relative;
@@ -56,11 +57,28 @@
         align-items: center;
         gap: 12px;
 
-        hr{
-            height: 2px;
+        .hr{
+            height: 1px;
             width: 100%;
             background-color: @badge-bg;
         }
+    }
+
+    &__title{
+        .font-36;
+        color: @text-color;
+        .fw-book;
+        margin-top: 0.77em;
+    }
+
+    .cta{
+        .font-20-104;
+        margin-top: 1.9em;
+        display: inline-flex;
+    }
+
+    .cta-wrapper{
+        text-align: right;
     }
 
     &--news{
