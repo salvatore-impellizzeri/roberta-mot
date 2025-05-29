@@ -37023,3 +37023,12 @@ Cake\Http\Server->run() C:\laragon\www\roberta-mot\webroot\index.php, line 44
 2025-05-29 16:20:35 warning: The datasource configuration `debug_kit` was not found.
 2025-05-29 16:20:35 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
 2025-05-29 16:20:35 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:23:03 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:23:03 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:23:03 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:23:03 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:23:04 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:23:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:23:04 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:23:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:23:04 warning: The datasource configuration `debug_kit` was not found.
