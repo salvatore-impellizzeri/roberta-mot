@@ -1,10 +1,11 @@
 .simple-cards{
-    .container-s;
+    .container-m;
     .m-auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    gap: clamp(20px, 30vw * @px2vw, 30px);
     .font-futura;
 
     &__card{
@@ -16,6 +17,12 @@
 
         p{
             .font-32;
+        }
+
+        svg{
+            .m-auto;
+            width: clamp(33px, 66vw * @px2vw, 66px);
+            margin-bottom: clamp(20px, 66vw * @px2vw, 66px);
         }
     }
 

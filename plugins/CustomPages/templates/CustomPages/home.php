@@ -22,7 +22,7 @@ $family = $queryBuilder->get('Sliders.Slides')
         <!-- PRESENTAZIONE -->
         <div class="home__top__presentation">
             <h1><?= $item->string_1 ?></h1>
-            <?php if(isset($image['image-1'])): ?>
+            <?php if(isset($images['image-1'])): ?>
                 <img src="<?= $this->Frontend->image($images['image-1']['path']) ?>" data-image="roberta-home" alt="<?= $images['image-1']['title'] ?>">
             <?php endif ?>
             <h1><?= $item->string_2 ?? null ?></h1>

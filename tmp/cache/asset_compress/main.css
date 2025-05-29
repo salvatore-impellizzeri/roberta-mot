@@ -5164,13 +5164,14 @@ button.swiper-pagination-bullet {
   border-radius: 30px;
 }
 .simple-cards {
-  width: clamp(350px,67.9644vw,1305px);
+  width: clamp(350px,76.66176vw,1472px);
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-items: center;
   align-items: center;
+  gap: clamp(20px,1.5624vw,30px);
   font-family: 'futura-pt', sans-serif;
   font-weight: 400;
 }
@@ -5187,6 +5188,12 @@ button.swiper-pagination-bullet {
 .simple-cards__card p {
   font-size: clamp(15px,1.66656vw,32px);
   line-height: 1.25em;
+}
+.simple-cards__card svg {
+  margin-left: auto;
+  margin-right: auto;
+  width: clamp(33px,3.43728vw,66px);
+  margin-bottom: clamp(20px,3.43728vw,66px);
 }
 .simple-cards__title {
   text-transform: uppercase;

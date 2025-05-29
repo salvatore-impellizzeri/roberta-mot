@@ -5,8 +5,8 @@
                 <div class="simple-cards__title">
                     <?= $card['title'] ?? null ?>
                 </div>
-                <?php if(isset($svg)): ?>
-                    <?= $this->Frontend->svg($svg); ?>
+                <?php if(isset($card['svg'])): ?>
+                    <?= $this->Frontend->svg($card['svg']); ?>
                 <?php endif ?>
                 <?= $card['text'] ?? null ?>
             </div>
