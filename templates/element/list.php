@@ -26,7 +26,7 @@
                         <?= $item->excerpt ?? null ?>
                         <?= $this->element('cta', [
                             'label' => $button,
-                            'url' => "#",
+                            'url' => $this->Frontend->url("/$url/view/{$item->id}"),
                             'icon' => 'icons/arrow-right.svg',
                             'extraClass' => 'cta--rose cta--square',
                         ]) ?>

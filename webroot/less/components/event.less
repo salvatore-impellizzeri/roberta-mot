@@ -1,8 +1,44 @@
-.event{
-    > div{
-        margin-top: 50px;
-        &:first-child{
-            margin: 0;
+.workshop{
+    .container-l;
+    .m-auto;
+
+    &__upper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: fit-content;
+
+        .cta{
+            align-self: center;
+            justify-self: end;
+        }
+    }
+
+    .img-text{
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__infos{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: clamp(50px, 150vw * @px2vw, 150px);
+        
+        .hr{
+            height: 1px;
+            background-color: @text-secondary;
+            width: 60%;
+        }
+
+        &__badges{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & > * {
+                align-self: center;
+            }
         }
     }
 }

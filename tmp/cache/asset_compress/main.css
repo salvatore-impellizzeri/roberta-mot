@@ -2972,6 +2972,11 @@ button.swiper-pagination-bullet {
   background: #EFEFEF;
   border: 1px solid #4F5637;
 }
+.cta--cream {
+  color: #4F5637;
+  background: #F5E9D9;
+  border: 1px solid #4F5637;
+}
 .cta svg path {
   fill: #4F5637;
 }
@@ -4590,6 +4595,44 @@ button.swiper-pagination-bullet {
 .service > div:first-child {
   margin: 0;
 }
+.workshop {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.workshop__upper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: fit-content;
+}
+.workshop__upper .cta {
+  align-self: center;
+  justify-self: end;
+}
+.workshop .img-text {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+.workshop__infos {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: clamp(50px,7.812vw,150px);
+}
+.workshop__infos .hr {
+  height: 1px;
+  background-color: #98AF6D;
+  width: 60%;
+}
+.workshop__infos__badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.workshop__infos__badges > * {
+  align-self: center;
+}
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4906,6 +4949,11 @@ button.swiper-pagination-bullet {
 .container-s {
   width: clamp(350px,67.9644vw,1305px);
 }
+.container-img-view {
+  width: clamp(350px,55.56936vw,1067px);
+  margin-left: auto;
+  margin-right: auto;
+}
 .text-box {
   background-color: white;
   border-radius: 30px;
@@ -5081,6 +5129,11 @@ button.swiper-pagination-bullet {
 .badge--green {
   background-color: #98AF6D;
   color: #fff;
+}
+.badge--white {
+  background-color: #fff;
+  color: #4F5637;
+  border: 1px solid #4F5637;
 }
 .testimonials-container {
   overflow: hidden;

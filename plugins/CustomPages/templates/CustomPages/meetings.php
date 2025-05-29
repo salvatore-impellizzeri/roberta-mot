@@ -23,5 +23,6 @@
     'title_list' => 'Prossimi <strong>incontri</strong> e <strong>workshop</strong>',
     'badge' => 'workshop',
     'items' => $workshops,
-    'button' => 'info'
+    'button' => 'info',
+    'url' =>  "events"
 ]) ?>

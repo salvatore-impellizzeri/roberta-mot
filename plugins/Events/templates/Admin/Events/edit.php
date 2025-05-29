@@ -11,19 +11,20 @@
                     </legend>
                     <?php
                     echo $this->Form->control('title', ['label' => __d('admin', 'title'), 'extraClass' => 'span-10']);
+                    echo $this->Form->control('date', ['label' => __d('admin', 'date'), 'extraClass' => 'span-3']);
+                    echo $this->Form->control('hour', ['label' => 'Orario', 'extraClass' => 'span-3']);
+                    echo $this->Form->control('location', ['label' => 'Location', 'extraClass' => 'span-3']);
                     echo $this->Form->control('published', ['label' => __d('admin', 'published'), 'type' => 'checkbox', 'extraClass' => 'span-2']);
-                    echo $this->Form->control('date', ['label' => __d('admin', 'date'), 'extraClass' => 'span-4']);
-                    echo $this->Form->control('hour', ['label' => 'Orario', 'extraClass' => 'span-4']);
-                    echo $this->Form->control('location', ['label' => 'Location', 'extraClass' => 'span-4']);
                     ?>
                 </fieldset>
-
+                
                 <fieldset class="input-group">
                     <legend class="input-group__info">
                         Contenuto
                     </legend>
-
+                    
                     <?php
+                    echo $this->Form->inlineEditor('title_page', ['label' => 'Titolo in pagina', 'extraClass' => 'span-10']);
                       echo $this->element('admin/uploader/image', [
     					'scope' => 'preview',
     					'title' => __dx('news', 'admin', 'preview'),
