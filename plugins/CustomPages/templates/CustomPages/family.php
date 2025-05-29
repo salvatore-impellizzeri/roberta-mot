@@ -5,7 +5,8 @@
 <div class="family">
     <?= $this->element('img-text', [
         'miniTitle' => $item->string_1,
-        'title' => $item->string_2
+        'title' => $item->string_2,
+        'extraClass' => 'family__img-text'
     ]); ?>
 
     <div class="family__images">
@@ -48,5 +49,11 @@
         'miniTitle' => $item->string_7,
         'title' => $item->string_8,
         'text' => $item->text_7,
+        'extraClass' => 'invert'
     ]) ?>
+
+    <?= $this->element('text-box', [
+        'title' => $item->text_8,
+        'extraClass' => 'text-box--white text-box--full'
+    ]); ?>
 </div>

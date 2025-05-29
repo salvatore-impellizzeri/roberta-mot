@@ -5459,11 +5459,11 @@ button.swiper-pagination-bullet {
   margin-left: auto;
   margin-right: auto;
 }
-.family .img-text {
+.family__img-text {
   display: block;
   width: 100%;
 }
-.family .img-text__text {
+.family__img-text__text {
   width: 55%;
 }
 .family__images {
