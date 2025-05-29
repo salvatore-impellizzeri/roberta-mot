@@ -1,5 +1,20 @@
 <?php 
     $this->assign('headerClass', 'mb-h');
+
+    $family = $queryBuilder->get('Sliders.Slides')
+    ->find()
+    ->where([
+        'Slides.published' => true,
+        'Slides.slider_id' => 3
+    ])
+    ->all();
+    $itemsFamily = [];
+    foreach ($family as $accordion) {
+        $itemsFamily[] = [
+            'title' => $accordion->title,
+            'text' => $accordion->text, 
+        ];
+    }
 ?>
 
 <div class="family">
@@ -56,4 +71,11 @@
         'title' => $item->text_8,
         'extraClass' => 'text-box--white text-box--full'
     ]); ?>
+
+    <?= $this->element('faq', [
+        'titleAccordion' => 'Alcune <strong>domande frequenti</strong> sulle Costellazioni Familiari',
+        'items' => $itemsFamily
+    ]); ?>
+
+    <!-- FORM -->
 </div>
