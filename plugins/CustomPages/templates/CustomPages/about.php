@@ -1,5 +1,20 @@
 <?php 
     $this->assign('headerClass', 'mb-h');
+
+    $accordions = $queryBuilder->get('Sliders.Slides')
+    ->find()
+    ->where([
+        'Slides.published' => true,
+        'Slides.slider_id' => 2
+    ])
+    ->all();
+    $items = [];
+    foreach ($accordions as $accordion) {
+        $items[] = [
+            'title' => $accordion->title,
+            'text' => $accordion->text, 
+        ];
+    }
 ?>
 
 <div>
@@ -69,4 +84,10 @@
     <?= $this->element('simple-card', [
         'cards' => $cards
     ]) ?>
+
+    <!-- ACCORDION -->
+    <?= $this->element('faq', [
+        'titleAccordion' => 'Mi dedico <strong>con passione</strong> agli incontri di Costellazioni Familiari e <strong>offro il mio aiuto</strong> in modo profondo',
+        'items' => $items
+    ]); ?>
 </div>

@@ -5174,6 +5174,7 @@ button.swiper-pagination-bullet {
   gap: clamp(20px,1.5624vw,30px);
   font-family: 'futura-pt', sans-serif;
   font-weight: 400;
+  margin-bottom: clamp(50px,10.416vw,200px);
 }
 .simple-cards strong {
   font-weight: 500;
