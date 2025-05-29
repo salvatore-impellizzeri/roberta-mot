@@ -99,13 +99,13 @@ li{
 // FONT
 
 .font-115{
-    font-size: clamp(30px, 115vw * @px2vw, 115px);
+    font-size: clamp(35px, 115vw * @px2vw, 115px);
     line-height: 1.15em;
 }
 
 
 .font-70{
-    font-size: clamp(25px, 70vw * @px2vw, 70px);
+    font-size: clamp(28px, 70vw * @px2vw, 70px);
     line-height: 0.9em;
 }
 
@@ -120,6 +120,11 @@ li{
     @media screen and (max-width: @mobile-s) {
         font-size: 25px;
     }
+}
+
+.font-50{
+    font-size: clamp(22px, 50vw * @px2vw, 50px);
+    line-height: 0.9em;
 }
 
 .font-40{
@@ -210,3 +215,12 @@ li{
     }
 }
 
+// Common title
+
+.common-title{
+    .font-40;
+    .font-futura;
+    margin-left: 0.35em;
+    margin-bottom: 0.74em;
+    text-align: left;
+}
