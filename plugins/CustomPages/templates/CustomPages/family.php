@@ -42,4 +42,11 @@
     <?= $this->element('simple-card', [
         'cards' => $cards
     ]) ?>
+
+    <?= $this->element('img-text', [
+        'img' => $images['family_approach'],
+        'miniTitle' => $item->string_7,
+        'title' => $item->string_8,
+        'text' => $item->text_7,
+    ]) ?>
 </div>

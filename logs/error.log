@@ -37032,3 +37032,163 @@ Cake\Http\Server->run() C:\laragon\www\roberta-mot\webroot\index.php, line 44
 2025-05-29 16:23:04 warning: The datasource configuration `debug_kit` was not found.
 2025-05-29 16:23:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
 2025-05-29 16:23:04 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:26:07 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:26:07 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:26:07 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:26:08 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:26:08 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:26:08 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:26:08 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:26:08 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:26:08 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:30:31 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:30:31 warning: Undefined array key "family_approach"
+Request URL: /costellazioni-familiari
+Referer URL: http://roberta-mot.test/chi-sono
+Client IP: 127.0.0.1
+Trace:
+C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 785
+Cake\View\View->render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\Controller.php, line 705
+Cake\Controller\Controller->render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\Controller.php, line 509
+Cake\Controller\Controller->invokeAction() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\src\Middleware\CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Runner->run() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Server.php, line 105
+Cake\Http\Server->run() C:\laragon\www\roberta-mot\webroot\index.php, line 44
+[main]
+
+2025-05-29 16:30:31 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:30:31 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:30:31 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:30:31 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:30:31 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:30:31 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:30:31 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:30:31 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:30:44 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:30:44 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:30:44 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:30:44 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:30:44 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:30:44 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:32:55 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:32:55 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:32:55 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:32:56 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:32:56 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:32:56 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:33:47 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:33:47 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:33:47 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:33:47 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:33:48 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:33:48 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:33:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:33:49 warning: Undefined variable $aide
+Request URL: /costellazioni-familiari
+Referer URL: http://roberta-mot.test/chi-sono
+Client IP: 127.0.0.1
+Trace:
+C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() C:\laragon\www\roberta-mot\plugins\CustomPages\templates\CustomPages\family.php, line 46
+C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\View\View.php, line 785
+Cake\View\View->render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\Controller.php, line 705
+Cake\Controller\Controller->render() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\Controller.php, line 509
+Cake\Controller\Controller->invokeAction() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\src\Middleware\CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Runner->run() C:\laragon\www\roberta-mot\vendor\cakephp\cakephp\src\Http\Server.php, line 105
+Cake\Http\Server->run() C:\laragon\www\roberta-mot\webroot\index.php, line 44
+[main]
+
+2025-05-29 16:33:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:33:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:33:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:33:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:33:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:33:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:33:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:33:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:34:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:34:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:34:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:34:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:34:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:34:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:34:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:34:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:34:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:34:59 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:34:59 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:34:59 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:35:47 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:35:47 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:35:47 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:35:47 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:35:48 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:35:48 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:35:48 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:35:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:35:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:35:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:35:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:35:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:35:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:35:49 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:35:49 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:38:03 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:38:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:38:04 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:38:04 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:38:04 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-05-29 16:38:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:38:04 warning: The datasource configuration `debug_kit` was not found.
+2025-05-29 16:38:04 warning: Unable to save request. Check your debug_kit datasource connection or ensure that PDO SQLite extension is enabled.
+2025-05-29 16:38:04 warning: The datasource configuration `debug_kit` was not found.

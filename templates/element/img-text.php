@@ -2,7 +2,7 @@
     <?php if(isset($img)): ?>
         <div class="img-text__img">
             <img class="img-text__img__content" src="<?= $this->Frontend->image($img->path); ?>" alt="<?= $img->title; ?>">
-            <?php if($aide): ?>
+            <?php if(isset($aide) && $aide): ?>
                 <img class="img-text__aide" src="img/AIDE Banner.png" alt="AIDE Banner">
             <?php endif ?>
         </div>
