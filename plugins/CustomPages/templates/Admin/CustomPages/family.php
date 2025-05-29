@@ -54,7 +54,7 @@ $this->extend('/Admin/Common/edit');
                     <?php echo $this->Form->control('string_7', ['label' => 'Mini titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->inlineEditor('string_8', ['label' => 'Titolo', 'class' => 'span-12']); ?> 
                     <?php echo $this->Form->editor('text_7', ['label' => 'Testo', 'class' => 'span-12']); ?>
-                    <?php echo $this->Form->inlineEditor('string_9', ['label' => 'Descrizione separata', 'class' => 'span-12']); ?> 
+                    <?php echo $this->Form->editor('text_8', ['label' => 'Descrizione separata', 'class' => 'span-12']); ?> 
                 </fieldset>
             </div>
             <?php echo $this->element('admin/tab-seo');?>

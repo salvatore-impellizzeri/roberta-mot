@@ -1,0 +1,39 @@
+.family{
+    .container-l;
+    .m-auto;
+
+    .img-text{
+        display: block;
+        width: 100%;
+
+        &__text{
+            width: 55%;
+        }
+    }
+
+    &__images{
+        height: clamp(350px, 670vw * @px2vw, 670px);
+        position: relative;
+        width: 100%;
+        margin-bottom: clamp(20px, 83vw * @px2vw, 83px);
+
+        img{
+            filter: grayscale(100%);
+            .br;
+        }
+
+        img:first-of-type{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: clamp(240px, 613vw * @px2vw, 613px);
+        }
+
+        img:nth-of-type(2){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: clamp(200px, 520vw * @px2vw, 520px);
+        }
+    }
+}

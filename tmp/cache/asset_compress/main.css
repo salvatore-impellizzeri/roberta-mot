@@ -5215,6 +5215,11 @@ button.swiper-pagination-bullet {
 }
 .img-text__text__mini-title {
   margin-bottom: 0.8em;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+}
+.img-text__text__mini-title strong {
+  font-weight: 500;
 }
 .img-text__text h1 {
   font-size: clamp(28px,3.6456vw,70px);
@@ -5448,4 +5453,38 @@ button.swiper-pagination-bullet {
 }
 .home__testimonials {
   margin-bottom: clamp(50px,10.416vw,200px);
+}
+.family {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.family .img-text {
+  display: block;
+  width: 100%;
+}
+.family .img-text__text {
+  width: 55%;
+}
+.family__images {
+  height: clamp(350px,34.8936vw,670px);
+  position: relative;
+  width: 100%;
+  margin-bottom: clamp(20px,4.32264vw,83px);
+}
+.family__images img {
+  filter: grayscale(100%);
+  border-radius: 30px;
+}
+.family__images img:first-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(240px,31.92504vw,613px);
+}
+.family__images img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(200px,27.0816vw,520px);
 }
