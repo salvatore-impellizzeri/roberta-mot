@@ -1,21 +1,32 @@
 .footer {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    padding: 0 clamp(10px, 75vw * @px2vw, 75px);
-    font-size: 12px;
+    .container-l;
+    .m-auto;
+    .font-futura;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: clamp(25px, 90vw * @px2vw, 90px) 0;
     background: @footer-bg;
-    color: @footer-color;
-    gap: clamp(10px, 90vw * @px2vw, 90px);
-    margin-top: 80px;
+    color: @text-color;
+    border-top: 1px solid @text-secondary;
 
+    .menu{
+        .fw-light;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-    @media screen and (max-width: @tablet-l) {
-        flex-direction: column;
-        gap: 15px;
-        height: auto;
-        padding: 40px 0;
-        text-align: center;
+    &__type{
+        text-transform: uppercase;
+        margin-bottom: clamp(10px, 19vw * @px2vw, 19px);
+    }
+
+    &__infos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: clamp(18px, 58vw * @px2vw, 58px);
     }
 
     a{
@@ -23,33 +34,30 @@
     }
 
     &__social{
-        margin-left: auto;
-
-        @media screen and (max-width: @tablet-l) {
-            margin-left: 0;
+        .menu{
+            gap: 6px;
         }
+    }
+
+    &__logo{
+        width: clamp(150px, 338vw * @px2vw, 338px);
+        margin: auto;
     }
 
     &__legal{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        color: black;
-
-        span{
-            text-decoration: underline;
+        .fw-book;
+        .menu{
+            gap: 12px;
+        }
+    }
+    
+    &__menu{
+        justify-items: end;
+        .menu{
+            width: clamp(150px, 310vw * @px2vw, 310px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(6px, 12vw * @px2vw, 12px);;
         }
     }
 
-    .menu{
-        display: flex;
-        align-items: center;
-        gap: clamp(10px, 30vw * @px2vw, 30px);
-
-        @media screen and (max-width: @tablet-l) {
-            flex-wrap: wrap;
-            gap: 1em;
-            justify-content: center;
-        }
-    }
 }

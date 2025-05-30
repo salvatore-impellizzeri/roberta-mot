@@ -2777,56 +2777,61 @@ button.swiper-pagination-bullet {
   -webkit-transform: translate3d(-300%,0,0);
 }
 .footer {
-  display: flex;
-  height: 80px;
-  align-items: center;
-  padding: 0 clamp(10px,3.906vw,75px);
-  font-size: 12px;
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  padding: clamp(25px,4.6872vw,90px) 0;
   background: #fff;
   color: #4F5637;
-  gap: clamp(10px,4.6872vw,90px);
-  margin-top: 80px;
+  border-top: 1px solid #98AF6D;
 }
-@media screen and (max-width: 1200px) {
-  .footer {
-    flex-direction: column;
-    gap: 15px;
-    height: auto;
-    padding: 40px 0;
-    text-align: center;
-  }
+.footer strong {
+  font-weight: 500;
+}
+.footer .menu {
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer__type {
+  text-transform: uppercase;
+  margin-bottom: clamp(10px,0.98952vw,19px);
+}
+.footer__infos {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap: clamp(18px,3.02064vw,58px);
 }
 .footer a {
   color: inherit;
 }
-.footer__social {
-  margin-left: auto;
+.footer__social .menu {
+  gap: 6px;
 }
-@media screen and (max-width: 1200px) {
-  .footer__social {
-    margin-left: 0;
-  }
+.footer__logo {
+  width: clamp(150px,17.60304vw,338px);
+  margin: auto;
 }
 .footer__legal {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  color: black;
+  font-weight: 400;
 }
-.footer__legal span {
-  text-decoration: underline;
+.footer__legal .menu {
+  gap: 12px;
 }
-.footer .menu {
-  display: flex;
-  align-items: center;
-  gap: clamp(10px,1.5624vw,30px);
+.footer__menu {
+  justify-items: end;
 }
-@media screen and (max-width: 1200px) {
-  .footer .menu {
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-  }
+.footer__menu .menu {
+  width: clamp(150px,16.1448vw,310px);
+  grid-template-columns: repeat(3,1fr);
+  gap: clamp(6px,0.62496vw,12px);
 }
 .gallery {
   display: grid;
@@ -2966,6 +2971,10 @@ button.swiper-pagination-bullet {
   color: #4F5637;
   background: #ffffff;
   border: 1px solid #4F5637;
+}
+.cta--header {
+  color: #4F5637;
+  background: #ffffff;
 }
 .cta--rose {
   color: #4F5637;

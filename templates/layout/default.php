@@ -12,7 +12,7 @@
         'cta' => [
             'label' => __d('global', 'get in touch'),
             'icon' => 'icons/arrow-right.svg',
-            'url' => '#'
+            'url' => '/contattami'
         ]
     ]);
     ?>

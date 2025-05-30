@@ -10,7 +10,6 @@
         'contacts' => true,
         'extraClass' => ''
     ]) ?>
-    <hr class="hr-l">
 
     <!-- FORM -->
     <div class="contacts__form">

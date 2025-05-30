@@ -17,7 +17,7 @@ $languages = Configure::read('Setup.languages');
                 'label' => $cta['label'],
                 'icon' => $cta['icon'],
                 'url' => $cta['url'],
-                'extraClass' => 'cta--square cta--white'
+                'extraClass' => 'cta--square cta--header'
             ]); ?>
         </div>
     <?php endif; ?>
