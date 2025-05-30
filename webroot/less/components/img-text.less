@@ -43,6 +43,28 @@
         }
     }
 
+
+    &__contacts{
+        .font-futura;
+        margin-top: clamp(10px, 25vw * @px2vw, 25px);
+
+        span{
+            display: inline-block;
+            margin-bottom: clamp(14px, 37vw * @px2vw, 37px);
+        }
+
+        &__badge-info{
+            margin-bottom: clamp(8px, 23vw * @px2vw, 23px);
+        }
+
+        &__badge-info,
+        &__socials{
+            display: flex;
+            align-items: center;
+            gap: clamp(6px, 17vw * @px2vw, 17px);
+        }
+    }
+
     &--ng{
         display: block;
     }

@@ -1,3 +1,3 @@
 <div class="badge <?= $extraClass ?? '' ?>">
-    <?= $label ?>
+    <?= $label ?? null ?>
 </div>

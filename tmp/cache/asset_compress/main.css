@@ -118,7 +118,7 @@ body strong {
   font-weight: 500;
 }
 a {
-  color: deeppink;
+  color: #4F5637;
 }
 p {
   line-height: 1.4em;
@@ -4651,10 +4651,9 @@ button.swiper-pagination-bullet {
 .workshop__infos__badges > * {
   align-self: center;
 }
-.contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5vw;
+.contacts .img-text {
+  width: clamp(350px,76.66176vw,1472px);
+  margin-bottom: clamp(40px,7.812vw,150px);
 }
 .article {
   display: block;
@@ -5270,6 +5269,27 @@ button.swiper-pagination-bullet {
 }
 .img-text__text p strong {
   font-weight: 500;
+}
+.img-text__contacts {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  margin-top: clamp(10px,1.302vw,25px);
+}
+.img-text__contacts strong {
+  font-weight: 500;
+}
+.img-text__contacts span {
+  display: inline-block;
+  margin-bottom: clamp(14px,1.92696vw,37px);
+}
+.img-text__contacts__badge-info {
+  margin-bottom: clamp(8px,1.19784vw,23px);
+}
+.img-text__contacts__badge-info,
+.img-text__contacts__socials {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px,0.88536vw,17px);
 }
 .img-text--ng {
   display: block;
