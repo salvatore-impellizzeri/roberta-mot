@@ -2,7 +2,7 @@
     <div class="card__img">
         <?php if (strpos($extraClass, 'card--meeting') !== false) { ?>
             <div class="card__badge">
-                <div class="card__badge__date"><?= str_replace('/', '.', $item->date) ?></div>
+                <div class="card__badge__date"><?=  $item->date->format('d.m.Y') ?></div>
                 <div class="card__badge__hour"><?= $item->hour ?></div>
             </div>
         <?php } ?>
@@ -19,7 +19,7 @@
             <div class="hr"></div>
         </div>
     <?php } else { ?>
-        <div class="card__date"><?= $item->date ?></div>
+        <div class="card__date"><?= $item->date->format('d.m.Y') ?></div>
     <?php } ?>
     <div class="card__title"><?= $item->title ?></div>
     <?php if(isset($button)): ?>

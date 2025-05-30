@@ -46,12 +46,12 @@
     &--ng{
         display: block;
     }
-}
-
-.invert{
-    grid-template-columns: 2fr clamp(350px, 600vw * @px2vw, 600px);
-
-    .img-text__img{
-        order: 1;
+    
+    &.invert{
+        grid-template-columns: 2fr clamp(350px, 600vw * @px2vw, 600px);
+    
+        .img-text__img{
+            order: 1;
+        }
     }
 }

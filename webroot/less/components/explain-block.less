@@ -5,15 +5,48 @@
 
     p{
         columns: 2;
-        height: clamp(150px, 224vw * @px2vw, 224px);
         column-gap: clamp(15px, 37vw * @px2vw, 37px);
         .font-futura;
         margin-bottom: 6em;
         padding: 0 1em;
+        width: 100%;
         .fw-book;
     }
 
     img{
         .br;
+    }
+
+    &.invert{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        p{
+            margin-bottom: 0;
+        }
+
+        .explain-block__img{
+            order: -1;
+            margin-bottom: 6em;
+        }
+    }
+
+    &--badge{
+        .explain-block{
+            &__img{
+                position: relative;
+            }
+
+            &__info{
+                .font-futura;
+                position: absolute;
+                top: clamp(15px, 35vw * @px2vw, 35px);
+                right: clamp(15px, 35vw * @px2vw, 35px);
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-transform: uppercase;
+            }
+        }
     }
 }

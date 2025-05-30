@@ -4582,6 +4582,21 @@ button.swiper-pagination-bullet {
 .news .hr-l {
   margin-bottom: clamp(50px,10.416vw,200px);
 }
+.news-view .img-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: clamp(20px,3.6456vw,70px);
+}
+.news-view .text-box {
+  margin-bottom: clamp(20px,5.208vw,100px);
+}
+.news-view__cta {
+  text-align: center;
+  margin-bottom: clamp(50px,10.416vw,200px);
+}
+.news-view__cta .cta {
+  margin: auto;
+}
 .service-preview {
   display: grid;
   grid-template-columns: 40% 1fr;
@@ -5154,6 +5169,10 @@ button.swiper-pagination-bullet {
   color: #4F5637;
   border: 1px solid #4F5637;
 }
+.badge--view {
+  background-color: #fff;
+  border: 1px solid #4F5637;
+}
 .testimonials-container {
   overflow: hidden;
   width: 100%;
@@ -5255,10 +5274,10 @@ button.swiper-pagination-bullet {
 .img-text--ng {
   display: block;
 }
-.invert {
+.img-text.invert {
   grid-template-columns: 2fr clamp(350px,31.248vw,600px);
 }
-.invert .img-text__img {
+.img-text.invert .img-text__img {
   order: 1;
 }
 .explain-block {
@@ -5269,18 +5288,46 @@ button.swiper-pagination-bullet {
 }
 .explain-block p {
   columns: 2;
-  height: clamp(150px,11.66592vw,224px);
   column-gap: clamp(15px,1.92696vw,37px);
   font-family: 'futura-pt', sans-serif;
   font-weight: 400;
   margin-bottom: 6em;
   padding: 0 1em;
+  width: 100%;
 }
 .explain-block p strong {
   font-weight: 500;
 }
 .explain-block img {
   border-radius: 30px;
+}
+.explain-block.invert {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.explain-block.invert p {
+  margin-bottom: 0;
+}
+.explain-block.invert .explain-block__img {
+  order: -1;
+  margin-bottom: 6em;
+}
+.explain-block--badge .explain-block__img {
+  position: relative;
+}
+.explain-block--badge .explain-block__info {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: clamp(15px,1.8228vw,35px);
+  right: clamp(15px,1.8228vw,35px);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+}
+.explain-block--badge .explain-block__info strong {
+  font-weight: 500;
 }
 .simple-cards {
   width: clamp(350px,76.66176vw,1472px);
