@@ -1,8 +1,12 @@
 .news{
-    > div{
-        margin-top: 50px;
-        &:first-child{
-            margin: 0;
+    .img-text{
+        margin-bottom: clamp(20px, 70vw * @px2vw, 70px);
+        &__text{
+            width: 40%;
         }
+    }
+
+    .hr-l{
+        .mb-200;
     }
 }

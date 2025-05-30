@@ -4573,11 +4573,14 @@ button.swiper-pagination-bullet {
   margin-top: 40px;
   display: inline-block;
 }
-.news > div {
-  margin-top: 50px;
+.news .img-text {
+  margin-bottom: clamp(20px,3.6456vw,70px);
 }
-.news > div:first-child {
-  margin: 0;
+.news .img-text__text {
+  width: 40%;
+}
+.news .hr-l {
+  margin-bottom: clamp(50px,10.416vw,200px);
 }
 .service-preview {
   display: grid;
@@ -5110,6 +5113,22 @@ button.swiper-pagination-bullet {
 .card .cta-wrapper {
   text-align: right;
 }
+.card--news {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+}
+.card--news strong {
+  font-weight: 500;
+}
+.card--news .card__date {
+  background-color: white;
+  color: #4F5637;
+  font-weight: 400;
+  padding: clamp(5px,0.5208vw,10px) clamp(6px,0.62496vw,12px);
+  justify-self: left;
+  font-size: clamp(12px,0.83328vw,16px);
+  line-height: 1.04em;
+}
 .badge {
   border-radius: 30px;
   padding: clamp(6px,0.88536vw,17px) clamp(12px,1.40616vw,27px);
@@ -5232,6 +5251,9 @@ button.swiper-pagination-bullet {
 }
 .img-text__text p strong {
   font-weight: 500;
+}
+.img-text--ng {
+  display: block;
 }
 .invert {
   grid-template-columns: 2fr clamp(350px,31.248vw,600px);
@@ -5383,6 +5405,15 @@ button.swiper-pagination-bullet {
   font-size: clamp(13px,1.0416vw,20px);
   line-height: 1.04em;
   margin-bottom: 0;
+}
+.news-list {
+  width: clamp(350px,87.65064vw,1683px);
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: clamp(20px,3.6456vw,70px);
 }
 .home__top {
   padding-top: clamp(10px,2.0832vw,40px);
